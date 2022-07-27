@@ -14,6 +14,7 @@ import NoMatch from './pages/NoMatch';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
@@ -74,6 +75,7 @@ function App() {
                 element={<NoMatch />} 
               />
             </Routes>
+            <Footer/>
           </StoreProvider>
         </div>
       </Router>
