@@ -75,9 +75,10 @@ a {
   font-weight: bold;
 }
 
-a:hover {
+/* REMOVED THIS ITEM---------------- */
+/* a:hover {
   text-decoration: underline;
-}
+} */
 
 header {
   background: var(--primary);
