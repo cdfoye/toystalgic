@@ -1,3 +1,5 @@
+import "./CategoryMenuStyles.css"; 
+
 import React, { useEffect } from 'react';
 import { useQuery } from '@apollo/client';
 import { useStoreContext } from '../../utils/GlobalState';
@@ -42,18 +44,11 @@ function CategoryMenu() {
   };
 
   return (
-    <div>
-      <h2>Choose a Category:</h2>
-      {categories.map((item) => (
-        <button
-          key={item._id}
-          onClick={() => {
-            handleClick(item._id);
-          }}
-        >
-          {item.name}
-        </button>
-      ))}
+    <div className="category">
+      <h2>Shop by Decade:</h2>
+          {categories.map((item) => (
+            <button key={item._id} className="cat-btn hvr-hollow" onClick={() => { handleClick(item._id); }}>{item.name} </button>
+          ))}
     </div>
   );
 }
