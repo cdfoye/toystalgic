@@ -1,5 +1,6 @@
-const { gql } = require('apollo-server-express');
+const { gql } = require("apollo-server-express");
 
+// added forum typeDefs 7/29 -cf
 const typeDefs = gql`
   type Category {
     _id: ID
@@ -28,6 +29,7 @@ const typeDefs = gql`
     lastName: String
     email: String
     orders: [Order]
+    posts: [Post]
   }
 
   type Checkout {
@@ -39,20 +41,53 @@ const typeDefs = gql`
     user: User
   }
 
+  type Post {
+    _id: ID
+    psotText: String
+    postAuthor: String
+    createdAt: String
+    comments: [Comment]!
+  }
+
+  type Comment {
+    _id: ID
+    commentText: String
+    commentAuthor: String
+    createdAt: String
+  }
+
   type Query {
     categories: [Category]
     products(category: ID, name: String): [Product]
     product(_id: ID!): Product
-    user: User
+    me: User
+    users: [User]
+    user(firstName: String!): User
+    posts(firstName: String): [Post]
+    post(postId: ID!): Post
     order(_id: ID!): Order
     checkout(products: [ID]!): Checkout
   }
 
   type Mutation {
-    addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
+    addUser(
+      firstName: String!
+      lastName: String!
+      email: String!
+      password: String!
+    ): Auth
     addOrder(products: [ID]!): Order
-    updateUser(firstName: String, lastName: String, email: String, password: String): User
+    updateUser(
+      firstName: String
+      lastName: String
+      email: String
+      password: String
+    ): User
     updateProduct(_id: ID!, quantity: Int!): Product
+    addPost(postText: String!): Thought
+    addComment(postId: ID!, commentText: String!): Thought
+    removePost(postId: ID!): Thought
+    removeComment(postId: ID!, commentId: ID!): Thought
     login(email: String!, password: String!): Auth
   }
 `;
