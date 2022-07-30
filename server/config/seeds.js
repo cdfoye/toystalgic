@@ -8,11 +8,12 @@ db.once("open", async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: "Food" },
-    { name: "Household Supplies" },
-    { name: "Electronics" },
-    { name: "Books" },
-    { name: "Toys" },
+    { name: "Pre-60's" },
+    { name: "1960's" },
+    { name: "1970's" },
+    { name: "1980's" },
+    { name: "1990's" },
+    { name: "2000's" },
   ]);
 
   console.log("categories seeded");
@@ -21,113 +22,283 @@ db.once("open", async () => {
 
   const products = await Product.insertMany([
     {
-      name: "Tin of Cookies",
+      name: "Polly Pocket",
+      description: "Small doll that began production in 1989",
+      image: "polly.jpg",
+      category: categories[3]._id,
+      price: 43.0,
+      quantity: 2,
+    },
+    {
+      name: "Tamagotchi",
       description:
-        "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-      image: "cookie-tin.jpg",
+        "Digital pet that requires feeding, playing and care. Small enough to be carried around in your pocket!",
+      image: "tamagotchi.jpg",
+      category: categories[4]._id,
+      price: 20.99,
+      quantity: 5,
+    },
+    {
+      name: "Lite-Brite",
+      category: categories[1]._id,
+      description:
+        "Light box with colored plastic pegs that can be placed into a design",
+      image: "lite-brite.jpg",
+      price: 35.0,
+      quantity: 3,
+    },
+    {
+      name: "Troll Doll",
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500,
+      description: "Plastic doll with distictive colorful hair",
+      image: "trolls.jpg",
+      price: 13.99,
+      quantity: 1,
     },
     {
-      name: "Canned Coffee",
+      name: "Furby",
+      category: categories[4]._id,
       description:
-        "Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.",
-      image: "canned-coffee.jpg",
-      category: categories[0]._id,
-      price: 1.99,
-      quantity: 500,
+        "Electronic robot that resembles a hamester/owl-like create with speaking capabilities in 24 languages",
+      image: "furby.jpg",
+      price: 35.0,
+      quantity: 10,
     },
     {
-      name: "Toilet Paper",
-      category: categories[1]._id,
-      description:
-        "Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.",
-      image: "toilet-paper.jpg",
-      price: 7.99,
-      quantity: 20,
-    },
-    {
-      name: "Handmade Soap",
-      category: categories[1]._id,
-      description:
-        "Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.",
-      image: "soap.jpg",
-      price: 3.99,
-      quantity: 50,
-    },
-    {
-      name: "Set of Wooden Spoons",
-      category: categories[1]._id,
-      description:
-        "Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.",
-      image: "wooden-spoons.jpg",
-      price: 14.99,
-      quantity: 100,
-    },
-    {
-      name: "Camera",
+      name: "Millennial Falcon",
       category: categories[2]._id,
-      description:
-        "Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.",
-      image: "camera.jpg",
+      description: "Starship from the Star Wars franchise",
+      image: "falcon.jpg",
       price: 399.99,
       quantity: 30,
     },
     {
-      name: "Tablet",
-      category: categories[2]._id,
+      name: "Barbie",
+      category: categories[0]._id,
       description:
-        "In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.",
-      image: "tablet.jpg",
-      price: 199.99,
-      quantity: 30,
+        "Plastic doll that swept the globe and is still a staple toy today",
+      image: "barbie.jpg",
+      price: 99.99,
+      quantity: 15,
     },
     {
-      name: "Tales at Bedtime",
+      name: "Cabbage Patch Kid",
+      category: categories[3]._id,
+      description: "Soft sculptured doll that resembles a small child",
+      image: "cabbage.jpg",
+      price: 59.99,
+      quantity: 9,
+    },
+    {
+      name: "Beanie Babies",
+      category: categories[4]._id,
+      description:
+        "Soft plush exterior, with plastic pellet filling made in many different cute designs",
+      image: "beanie.jpg",
+      price: 41.99,
+      quantity: 100,
+    },
+    {
+      name: "My Little Pony",
+      category: categories[4]._id,
+      description: "Colorful ponies with unique symbols on their flanks",
+      image: "pony.jpg",
+      price: 14.99,
+      quantity: 5,
+    },
+    {
+      name: "Legos",
+      category: categories[0]._id,
+      description:
+        "Small plastic interlocking blocks that can be put together into immesurable formations",
+      image: "lego.jpg",
+      price: 17.99,
+      quantity: 1,
+    },
+    {
+      name: "Game Boy",
+      category: categories[4]._id,
+      description:
+        "Japanese manufuactured handheld gaming console with many differnt game options",
+      image: "game-boy.jpg",
+      price: 69.99,
+      quantity: 16,
+    },
+    {
+      name: "Smurfs",
       category: categories[3]._id,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.",
-      image: "bedtime-book.jpg",
-      price: 9.99,
-      quantity: 100,
+        "Begian comic centered around fictional colony of small, blue, humaniod creatures who live in the forest",
+      image: "smurfs.jpg",
+      price: 6.5,
+      quantity: 2,
     },
     {
-      name: "Spinning Top",
-      category: categories[4]._id,
+      name: "Hungry Hungry Hippos",
+      category: categories[2]._id,
       description:
-        "Ut vulputate hendrerit nibh, a placerat elit cursus interdum.",
-      image: "spinning-top.jpg",
-      price: 1.99,
-      quantity: 1000,
+        "Tabletop game where players collect as many marbles as possible",
+      image: "hippo.jpg",
+      price: 79.99,
+      quantity: 3,
     },
     {
-      name: "Set of Plastic Horses",
-      category: categories[4]._id,
-      description:
-        "Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.",
-      image: "plastic-horses.jpg",
-      price: 2.99,
-      quantity: 1000,
+      name: "Hot Wheels Track",
+      category: categories[1]._id,
+      description: "Track for Hot Wheels cars to race",
+      image: "hotwheel.jpg",
+      price: 45.0,
+      quantity: 4,
     },
     {
-      name: "Teddy Bear",
-      category: categories[4]._id,
+      name: "View-Master",
+      category: categories[1]._id,
       description:
-        "Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.",
-      image: "teddy-bear.jpg",
-      price: 7.99,
-      quantity: 100,
+        "Steroscope that uses various reels to show small transparent color photographs",
+      image: "viewmaster.jpg",
+      price: 29.99,
+      quantity: 13,
     },
     {
-      name: "Alphabet Blocks",
+      name: "Simon Says",
+      category: categories[2]._id,
+      description:
+        "Handheld short-term memory game using lights and tones to test user, increasing in complexity with each level",
+      image: "simon.jpg",
+      price: 19.99,
+      quantity: 10,
+    },
+    {
+      name: "Winnie-The-Pooh",
+      category: categories[1]._id,
+      description:
+        "Stuffed bear based off of the fictional bear from the sereise of books by A. A. Miline",
+      image: "pooh.jpg",
+      price: 15.0,
+      quantity: 19,
+    },
+    {
+      name: "Easy Bake Oven",
+      category: categories[2]._id,
+      description:
+        "Working toy oven where children can bake small confectionaries using ordianry incandecent light bulbs",
+      image: "easy-bake.jpg",
+      price: 29.99,
+      quantity: 3,
+    },
+    {
+      name: "Atari",
+      category: categories[2]._id,
+      description:
+        "Home video game console famous for such games as Pong and Tetris",
+      image: "atari.jpg",
+      price: 55.0,
+      quantity: 1,
+    },
+    {
+      name: "Pokemon Cards",
       category: categories[4]._id,
       description:
-        "Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.",
-      image: "alphabet-blocks.jpg",
-      price: 9.99,
-      quantity: 600,
+        "Stratgey based card game where players battle with their cards",
+      image: "pokemon.jpg",
+      price: 3.25,
+      quantity: 15,
     },
+    {
+      name: "Operation",
+      category: categories[1]._id,
+      description:
+        "Skill based game that tests users hand-eye coordination, and fine-motor skills",
+      image: "operation.jpg",
+      price: 15.99,
+      quantity: 13,
+    },
+    {
+      name: "Sky Dancers",
+      category: categories[4]._id,
+      description:
+        "Doll toy with pull string and foam wings that would launch in the air when the string is pulled",
+      image: "sky-dancer.jpg",
+      price: 29.99,
+      quantity: 3,
+    },
+    {
+      name: "Glo Worm",
+      category: categories[3]._id,
+      description: "Battery powerd stuffed worm thatkights up when squeezed",
+      image: "glo-worm.jpg",
+      price: 21.99,
+      quantity: 23,
+    },
+    {
+      name: "Pogo Stick",
+      category: categories[0]._id,
+      description: "Device for jumping off the ground in the standing postion",
+      image: "pogo.jpg",
+      price: 63.99,
+      quantity: 34,
+    },
+    {
+      name: "Slinky",
+      category: categories[0]._id,
+      description:
+        "Helical spring toy that perform a number of tricks, aided by gravity and it's own momentum",
+      image: "slinky.jpg",
+      price: 13.99,
+      quantity: 45,
+    },
+    {
+      name: "Teletubbies",
+      category: categories[4]._id,
+      description: "",
+      image: "teletubbies.jpg",
+      price: 13.0,
+      quantity: 10,
+    },
+    {
+      name: "Littlest Pet Shop",
+      category: categories[5]._id,
+      description:
+        "Toy franchise based off of cartoon serise that allows users to adopt pets",
+      image: "pet-shop.jpg",
+      price: 44.99,
+      quantity: 2,
+    },
+    {
+      name: "Robot Dog",
+      category: categories[4]._id,
+      description:
+        "Robot designed to look like a dog that has similar characteristics to a real dog",
+      image: "robot-dog.jpg",
+      price: 21.99,
+      quantity: 6,
+    },
+    {
+      name: "American Girl Doll",
+      category: categories[2]._id,
+      description:
+        "18 inch doll that come in a variety of ethnicities from various times in history",
+      image: "american.jpg",
+      price: 33.99,
+      quantity: 2,
+    },
+    {
+      name: "iPod",
+      category: categories[3]._id,
+      description:
+        "Handheld music player that can hold 1,000 songs in your pocket",
+      image: "ipod.jpg",
+      price: 32.99,
+      quantity: 10,
+    },
+    // {
+    //   name: "Simon Says",
+    //   category: categories[2]._id,
+    //   description: "",
+    //   image: "simon.jpg",
+    //   price: 19.99,
+    //   quantity: 10,
+    // },
   ]);
 
   console.log("products seeded");
@@ -135,10 +306,10 @@ db.once("open", async () => {
   await User.deleteMany();
 
   await User.create({
-    firstName: "Pamela",
-    lastName: "Washington",
-    email: "pamela@testmail.com",
-    password: "password12345",
+    firstName: "Catherine",
+    lastName: "Foye",
+    email: "catherine@email.com",
+    password: "Catherine123",
     orders: [
       {
         products: [products[0]._id, products[0]._id, products[1]._id],
@@ -147,10 +318,24 @@ db.once("open", async () => {
   });
 
   await User.create({
-    firstName: "Elijah",
-    lastName: "Holt",
-    email: "eholt@testmail.com",
-    password: "password12345",
+    firstName: "Cynthia",
+    lastName: "Godoy",
+    email: "cynthia@email.com",
+    password: "Cynthia123",
+  });
+
+  await User.create({
+    firstName: "Kelly",
+    lastName: "Walsh",
+    email: "kelly@email.com",
+    password: "Kelly123",
+  });
+
+  await User.create({
+    firstName: "Aubree",
+    lastName: "Zarges",
+    email: "aubree@email.com",
+    password: "Aubree123",
   });
 
   console.log("users seeded");
