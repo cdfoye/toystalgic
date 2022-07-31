@@ -64,7 +64,7 @@ p, .product-info, .cost {
 }
 
 p:hover {
-    color: #12c998;
+    color: #ff6934;
 }
 
 /* Sweep To Top */
@@ -88,7 +88,7 @@ p:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #12c988;
+    background-color: #ff6934;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50% 100%;
@@ -107,3 +107,5 @@ p:hover {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
 }
+
+/* #12c988 */
