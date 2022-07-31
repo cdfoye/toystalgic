@@ -1,0 +1,44 @@
+
+.product-heading {
+    margin-top: 40px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.product-heading h2 {
+    margin-left: 7.5%;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+h3 {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.product-grid {
+    max-width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-bottom: 2rem;
+    justify-content: center; 
+}
+
+
+@media screen and (max-width: 1000px) {
+    .product-grid {
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .product-grid {
+        max-width: 80%;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+    .product-heading h2 {
+        margin-left: 10%;
+    }
+}

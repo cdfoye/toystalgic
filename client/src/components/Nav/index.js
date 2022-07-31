@@ -17,7 +17,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
         <div className="loggedin">
           <ul className={click ? "navbar active" : "navbar"}>
             <li><Link to="/orderHistory" className="hvr-float">Order History</Link></li>
-            <li><a href="/" onClick={() => Auth.logout()}>Logout</a></li>
+            <li><a href="/" className="hvr-float" onClick={() => Auth.logout()}>Logout</a></li>
           </ul>
 
           <div className="hamburger" onClick={handleClick}>
@@ -55,7 +55,6 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
   return (
     <div className="nav">
-    
       <Link to="/" className="hvr-bounce-in" ><h1>toystalgic</h1></Link> 
         <nav>
           {showNavigation()}

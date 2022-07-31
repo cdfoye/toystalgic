@@ -4,6 +4,10 @@ import { pluralize } from "../../utils/helpers"
 import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import "./ProductItemStyles.css"; 
+
+import { BsPlusCircle } from "react-icons/bs";
+
 
 function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
@@ -40,20 +44,32 @@ function ProductItem(item) {
   }
 
   return (
-    <div className="card px-1 py-1">
-      <Link to={`/products/${_id}`}>
-        <img
-          alt={name}
-          src={`/images/${image}`}
-        />
-        <p>{name}</p>
-      </Link>
-      <div>
-        <div>{quantity} {pluralize("item", quantity)} in stock</div>
-        <span>${price}</span>
+  <div className="card-container">
+    
+    <div className="card">
+      <div className="product-image">
+        <div className="img">
+          <Link to={`/products/${_id}`}><img alt={name} src={`/images/${image}`}/><BsPlusCircle className="overlay-img" size={40} style={{ color: "#white", marginRight: ".75rem" }} /></Link>
+
+            <div className="overlay-btn">
+              <button className="cart-btn hvr-sweep-to-top" onClick={addToCart}>Add to cart</button>
+            </div>
+        </div>
       </div>
-      <button onClick={addToCart}>Add to cart</button>
+
+        <div className="card-footer">
+          <div className="left">
+            <Link to={`/products/${_id}`}><p>{name}</p></Link>
+              <div className="product-info">{quantity} {pluralize("item", quantity)} in stock</div>
+          </div>
+
+          <div className="right">
+            <span className="cost">${price}</span>
+          </div>
+        </div>
     </div>
+  </div>
+
   );
 }
 

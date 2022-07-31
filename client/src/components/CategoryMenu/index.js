@@ -44,6 +44,7 @@ function CategoryMenu() {
   };
 
   return (
+    // <div className="cat-container">
     <div className="category">
       <h2>Shop by Decade:</h2>
           {categories.map((item) => (
