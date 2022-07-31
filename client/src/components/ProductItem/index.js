@@ -44,8 +44,9 @@ function ProductItem(item) {
   }
 
   return (
+  <div className="card-container">
+    
     <div className="card">
-      
       <div className="product-image">
         <div className="img">
           <Link to={`/products/${_id}`}><img alt={name} src={`/images/${image}`}/><BsPlusCircle className="overlay-img" size={40} style={{ color: "#white", marginRight: ".75rem" }} /></Link>
@@ -67,6 +68,8 @@ function ProductItem(item) {
           </div>
         </div>
     </div>
+  </div>
+
   );
 }
 

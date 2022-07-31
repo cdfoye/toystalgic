@@ -21,7 +21,6 @@
     font-size: 45px;
     text-decoration: none;
     font-family: 'Kirang Haerang', cursive;
-    margin-left: 9.5rem;
 }
 
 .nav h1:hover {
@@ -33,7 +32,7 @@
     display: flex;
     text-transform: uppercase;
     text-decoration: none;
-    margin-right: 9.5rem;
+    margin-right: 8rem;
 }
 
 .navbar li {
@@ -80,31 +79,18 @@
     }
     .navbar li a {
         font-size: 16px;
-    }
+    }    
     .hamburger{
         display: initial;
         margin-right: 5rem;
     }
-    .nav h1 {
-        margin-left: 2.5rem;
-    }
-    
-}
-
-@media screen and (max-width: 1400px){
-.nav h1 {
-    margin-left: 50%;
-}
 }
 
 @media screen and (max-width: 700px){
-    .nav h1 {
-        margin-left: 30%;
-    }
     .hamburger {
-        margin-right: 4.5rem;
-      }
+        margin-right: 5rem;
     }
+}
 
 /* Float */
 .hvr-float {
@@ -127,6 +113,7 @@
 
 /* BOUNCE-IN---------------------------- */
 .hvr-bounce-in {
+    margin-left: 7.5%;
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);

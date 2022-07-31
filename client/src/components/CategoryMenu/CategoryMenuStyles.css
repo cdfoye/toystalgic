@@ -2,14 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
+.category {
+    width: 85%;
+    margin: auto;
+    justify-content: center; 
+}
+
 .category h2 {
     margin-top: 80px;
-    font-size: 24px;
+    margin-left: 0;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
 }
 
 .cat-btn {
     background-color: #16ffbd;
-    /* font-family: 'Kirang Haerang', cursive; */
     font-family: 'Gloria Hallelujah', cursive;
     border-radius: 0;
     outline: none;
@@ -34,4 +42,10 @@
 }
 .hvr-hollow:hover, .hvr-hollow:focus, .hvr-hollow:active {
     background: none;
+}
+
+@media screen and (max-width: 740px) {
+    .category {
+        width: 80%;
+    }
 }
