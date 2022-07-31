@@ -12,6 +12,7 @@
     /* font-family: 'Kirang Haerang', cursive; */
     font-family: 'Gloria Hallelujah', cursive;
     border-radius: 0;
+    outline: none;
     border-color: #16ffbd;
     margin-bottom: 5px;
     margin-right: 5px;

@@ -97,7 +97,6 @@ button {
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
 }
 
 button:hover {
@@ -170,10 +169,10 @@ input:focus {
   margin-bottom: var(--spacing-one);
 }
 
-.my-2 {
+/* .my-2 {
   margin-top: var(--spacing-two);
   margin-bottom: var(--spacing-two);
-}
+} */
 
 .px-1 {
   padding-right: var(--spacing-one);
