@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { Schema } = mongoose;
+const { Schema, model } = mongoose;
 const dateFormat = require("../utils/dateFormat");
 
 const postSchema = new Schema({

@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 
 import { ADD_POST } from "../../utils/mutations";
-import { QUERY_POSTS, QUERY_ME } from "../../utils/queries";
+import { QUERY_POSTS } from "../../utils/queries";
 
 import Auth from "../../utils/auth";
+
+import "./PostFormStyles.css";
 
 const PostForm = () => {
   const [postText, setPostText] = useState("");
@@ -26,11 +28,11 @@ const PostForm = () => {
       }
 
       // update me object's cache
-      const { me } = cache.readQuery({ query: QUERY_ME });
-      cache.writeQuery({
-        query: QUERY_ME,
-        data: { me: { ...me, posts: [...me.posts, addPost] } },
-      });
+      // const { me } = cache.readQuery({ query: QUERY_ME });
+      // cache.writeQuery({
+      //   query: QUERY_ME,
+      //   data: { me: { ...me, posts: [...me.posts, addPost] } },
+      // });
     },
   });
 

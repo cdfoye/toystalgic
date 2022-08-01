@@ -23,7 +23,7 @@ const Forum = () => {
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <PostList thoughts={posts} title="Some Feed for Thought(s)..." />
+            <PostList posts={posts} title="Some Feed for Thought(s)..." />
           )}
         </div>
       </div>

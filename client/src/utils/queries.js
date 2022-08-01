@@ -50,8 +50,8 @@ export const QUERY_CATEGORIES = gql`
 
 // added posts 7/30 - cf
 export const QUERY_USER = gql`
-  {
-    user {
+  query user($firstName: String!) {
+    user(firstName: $firstName) {
       firstName
       lastName
       orders {

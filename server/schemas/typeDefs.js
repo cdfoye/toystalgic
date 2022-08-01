@@ -29,7 +29,7 @@ const typeDefs = gql`
     lastName: String
     email: String
     orders: [Order]
-    posts: [Post]
+    posts: [Post]!
   }
 
   type Checkout {
@@ -43,7 +43,7 @@ const typeDefs = gql`
 
   type Post {
     _id: ID
-    psotText: String
+    postText: String
     postAuthor: String
     createdAt: String
     comments: [Comment]!
@@ -84,10 +84,10 @@ const typeDefs = gql`
       password: String
     ): User
     updateProduct(_id: ID!, quantity: Int!): Product
-    addPost(postText: String!): Thought
-    addComment(postId: ID!, commentText: String!): Thought
-    removePost(postId: ID!): Thought
-    removeComment(postId: ID!, commentId: ID!): Thought
+    addPost(postText: String!): Post
+    addComment(postId: ID!, commentText: String!): Post
+    removePost(postId: ID!): Post
+    removeComment(postId: ID!, commentId: ID!): Post
     login(email: String!, password: String!): Auth
   }
 `;

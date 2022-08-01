@@ -55,7 +55,7 @@ function App() {
               <Route path="/orderHistory" element={<OrderHistory />} />
               <Route path="/products/:id" element={<Detail />} />
               <Route path="*" element={<NoMatch />} />
-              <Route path="/posts/:postId" element={<SinglePost />} />
+              <Route path="/post/:postId" element={<SinglePost />} />
               <Route path="/forum" element={<Forum />} />
             </Routes>
             <Footer />
