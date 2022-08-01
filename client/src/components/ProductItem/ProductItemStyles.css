@@ -1,0 +1,125 @@
+
+.card {
+    font-family: 'Rubik', sans-serif;
+    background-color: whitesmoke;
+    padding: .75rem;
+    margin-bottom: 20px;
+    width: 100%;
+    grid-template-columns: 1fr;
+}
+
+.img {
+    position: relative;
+    z-index: 0;
+}
+
+.overlay-btn {
+    width: 100%;
+    position: absolute;
+    align-self: center;
+    bottom: 5.75px;
+    left: auto;
+    right: auto;
+    overflow: visible;
+}
+
+.cart-btn {
+    width: 100%;
+    padding: .75rem;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    opacity: 0%;
+    overflow: visible;
+}
+
+.overlay-img {
+    position: absolute;
+    bottom: auto;
+    top: 40%;
+    left: 45%;
+    opacity: 0%;
+}
+
+.overlay-img:hover, .product-image:hover {
+    color: #12c998;
+    opacity: 80%;
+}
+
+/* CARD FOOTER------------ */
+.card-footer {
+    max-width: 100%;
+    margin-bottom: 1px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.left {
+    text-align: start;
+}
+
+.right {
+    text-align: end;
+}
+
+p, .product-info, .cost {
+    color: black;
+}
+
+p:hover {
+    color: #ff6934;
+}
+
+/* Sweep To Top */
+.hvr-sweep-to-top {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.hvr-sweep-to-top:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff6934;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
+    color: white;
+}
+.hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

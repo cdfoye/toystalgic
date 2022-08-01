@@ -34,7 +34,7 @@
 .cart-closed {
   position: fixed;
   top: 7%;
-  right: 10%;
+  right: 7.5%;
   font-size: 2rem;
   cursor: pointer;
   background-color: #16ffbd;
@@ -70,8 +70,6 @@
   }
 
   .cart-closed {
-    /* position: relative; */
-    /* margin: 0 auto; */
     right: 8.5%;
   }
 }

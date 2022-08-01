@@ -50,7 +50,7 @@ db.once("open", async () => {
     {
       name: "Troll Doll",
       category: categories[0]._id,
-      description: "Plastic doll with distictive colorful hair",
+      description: "Plastic doll with distinctive colorful hair",
       image: "trolls.jpg",
       price: 13.99,
       quantity: 1,
@@ -59,7 +59,7 @@ db.once("open", async () => {
       name: "Furby",
       category: categories[4]._id,
       description:
-        "Electronic robot that resembles a hamester/owl-like create with speaking capabilities in 24 languages",
+        "Electronic robot that resembles a hamster/owl-like create with speaking capabilities in 24 languages",
       image: "furby.jpg",
       price: 35.0,
       quantity: 10,
@@ -110,7 +110,7 @@ db.once("open", async () => {
       name: "Legos",
       category: categories[0]._id,
       description:
-        "Small plastic interlocking blocks that can be put together into immesurable formations",
+        "Small plastic interlocking blocks that can be put together into immeasurable formations",
       image: "lego.jpg",
       price: 17.99,
       quantity: 1,
@@ -119,7 +119,7 @@ db.once("open", async () => {
       name: "Game Boy",
       category: categories[4]._id,
       description:
-        "Japanese manufuactured handheld gaming console with many differnt game options",
+        "Japanese manufactured handheld gaming console with many different game options",
       image: "game-boy.jpg",
       price: 69.99,
       quantity: 16,
@@ -128,7 +128,7 @@ db.once("open", async () => {
       name: "Smurfs",
       category: categories[3]._id,
       description:
-        "Begian comic centered around fictional colony of small, blue, humaniod creatures who live in the forest",
+        "Belgian comic centered around fictional colony of small, blue, humanoid creatures who live in the forest",
       image: "smurfs.jpg",
       price: 6.5,
       quantity: 2,
@@ -154,7 +154,7 @@ db.once("open", async () => {
       name: "View-Master",
       category: categories[1]._id,
       description:
-        "Steroscope that uses various reels to show small transparent color photographs",
+        "Stereoscope that uses various reels to show small transparent color photographs",
       image: "viewmaster.jpg",
       price: 29.99,
       quantity: 13,
@@ -172,7 +172,7 @@ db.once("open", async () => {
       name: "Winnie-The-Pooh",
       category: categories[1]._id,
       description:
-        "Stuffed bear based off of the fictional bear from the sereise of books by A. A. Miline",
+        "Stuffed bear based off of the fictional bear from the series of books by A. A. Miline",
       image: "pooh.jpg",
       price: 15.0,
       quantity: 19,
@@ -181,7 +181,7 @@ db.once("open", async () => {
       name: "Easy Bake Oven",
       category: categories[2]._id,
       description:
-        "Working toy oven where children can bake small confectionaries using ordianry incandecent light bulbs",
+        "Working toy oven where children can bake small confectionaries using ordinary incandescent light bulbs",
       image: "easy-bake.jpg",
       price: 29.99,
       quantity: 3,
@@ -199,7 +199,7 @@ db.once("open", async () => {
       name: "Pokemon Cards",
       category: categories[4]._id,
       description:
-        "Stratgey based card game where players battle with their cards",
+        "Strategy based card game where players battle with their cards",
       image: "pokemon.jpg",
       price: 3.25,
       quantity: 15,
@@ -225,7 +225,7 @@ db.once("open", async () => {
     {
       name: "Glo Worm",
       category: categories[3]._id,
-      description: "Battery powerd stuffed worm thatkights up when squeezed",
+      description: "Battery powered stuffed worm that lights up when squeezed",
       image: "glo-worm.jpg",
       price: 21.99,
       quantity: 23,
@@ -233,7 +233,7 @@ db.once("open", async () => {
     {
       name: "Pogo Stick",
       category: categories[0]._id,
-      description: "Device for jumping off the ground in the standing postion",
+      description: "Device for jumping off the ground in the standing position",
       image: "pogo.jpg",
       price: 63.99,
       quantity: 34,
@@ -242,7 +242,7 @@ db.once("open", async () => {
       name: "Slinky",
       category: categories[0]._id,
       description:
-        "Helical spring toy that perform a number of tricks, aided by gravity and it's own momentum",
+        "Helical spring toy that perform a number of tricks, aided by gravity and its own momentum",
       image: "slinky.jpg",
       price: 13.99,
       quantity: 45,
@@ -259,7 +259,7 @@ db.once("open", async () => {
       name: "Littlest Pet Shop",
       category: categories[5]._id,
       description:
-        "Toy franchise based off of cartoon serise that allows users to adopt pets",
+        "Toy franchise based off of cartoon series that allows users to adopt pets",
       image: "pet-shop.jpg",
       price: 44.99,
       quantity: 2,
@@ -277,7 +277,7 @@ db.once("open", async () => {
       name: "American Girl Doll",
       category: categories[2]._id,
       description:
-        "18 inch doll that come in a variety of ethnicities from various times in history",
+        "18-inch doll that come in a variety of ethnicities from various times in history",
       image: "american.jpg",
       price: 33.99,
       quantity: 2,
@@ -290,6 +290,39 @@ db.once("open", async () => {
       image: "ipod.jpg",
       price: 32.99,
       quantity: 10,
+    },
+    {
+      name: "Plastic Soldiers",
+      category: categories[0]._id,
+      description: "Small plastic infantry people for pretend play",
+      image: "army.jpg",
+      price: 29.99,
+      quantity: 90,
+    },
+    {
+      name: "GI Joe",
+      category: categories[1]._id,
+      description:
+        "Action figure doll representative of the branches of the US Military",
+      image: "joe.jpg",
+      price: 179.99,
+      quantity: 1,
+    },
+    {
+      name: "Mr. Potato Head",
+      category: categories[2]._id,
+      description: "Potato shaped toy with interchangeable feature parts",
+      image: "potato.jpg",
+      price: 45.0,
+      quantity: 8,
+    },
+    {
+      name: "Ninja Turtles",
+      category: categories[2]._id,
+      description: "Figurine toys based on the comic franchise",
+      image: "turtles.jpg",
+      price: 23.99,
+      quantity: 6,
     },
     // {
     //   name: "Simon Says",
