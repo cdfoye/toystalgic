@@ -1,11 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+.background{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+} 
+
 .login {
     margin-top: 70px;
 }
 
-.background-image {
+.img {
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
     object-fit: cover;
+    margin-bottom: 0px !important;
+    vertical-align: bottom;
+}
+
+.background::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0.8; 
+}
+
+.login-heading {
+    margin-top: 70px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:100px;
+    left: 55%;
+    color: white;
+    text-align: start;
+    padding-top: 72px;
+    font-size: 28px;
+}
+
+.login-heading a {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #16ffbd;
+}
+
+.login-heading h2  {
+    color: purple;
+    font-size: 32px;
+}
+
+.email-form, .password-form {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.password-form input, .email-form input {
+    font-size: 18px;
+}
+
+.login-submit-btn {
+    background-color: #16ffbd;
+    font-size: 18px;
+    color: black;
+    font-family: 'Gloria Hallelujah', cursive;
+    border-radius: 0;
+    outline: none;
+    border-color: #16ffbd;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+/* BOUNCE-IN---------------------------- */
+.hvr-bounce-in {
+    margin-left: 7.5%;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/* Buzz */
+@-webkit-keyframes hvr-buzz {
+    50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+    }
+}
+@keyframes hvr-buzz {
+    50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+    }
+}
+.hvr-buzz {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+    -webkit-animation-name: hvr-buzz;
+    animation-name: hvr-buzz;
+    -webkit-animation-duration: 0.15s;
+    animation-duration: 0.15s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
