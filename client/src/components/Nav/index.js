@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import React, {useState} from 'react';
 
 import { FaBars, FaTimes } from "react-icons/fa";
+import { MdOutlineForum } from "react-icons/md";
 
 // function Nav() {
   const Nav = () => {
@@ -16,8 +17,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
       return (
         <div className="loggedin">
           <ul className={click ? "navbar active" : "navbar"}>
-            <li><Link to="/orderHistory" className="hvr-float">Order History</Link></li>
-            <li><a href="/" className="hvr-float" onClick={() => Auth.logout()}>Logout</a></li>
+            <li><Link to="/orderHistory" className="hvr-li-float">Order History</Link></li>
+            <li><a href="/" className="hvr-li-float" onClick={() => Auth.logout()}>Logout</a></li>
           </ul>
 
           <div className="hamburger" onClick={handleClick}>
@@ -34,11 +35,11 @@ import { FaBars, FaTimes } from "react-icons/fa";
       return (
         <div className="loggedout">
           <ul className={click ? "navbar active" : "navbar"}>
-            <li><Link to="/" className="hvr-float" smooth>Shop</Link></li>
-            <li><Link to="/login" className="hvr-float" smooth>Login</Link></li>
-            <li><Link to="/signup" className="hvr-float" smooth>Signup</Link></li>
-            <li><Link to="/" className="hvr-float" smooth>About Us</Link></li>
-            <li><Link to="/" className="hvr-float" smooth>Forum</Link></li>
+            <li><Link to="/" className="hvr-li-float" smooth>Shop</Link></li>
+            <li><Link to="/login" className="hvr-li-float" smooth>Login</Link></li>
+            <li><Link to="/signup" className="hvr-li-float" smooth>Signup</Link></li>
+            <li><Link to="/" className="hvr-li-float" smooth>About Us</Link></li>
+            <li><Link to="/" className="hvr-li-float" smooth>Forum <MdOutlineForum size={18} style={{ color: "#black", marginRight: ".2rem" }} /></Link></li>
           </ul>
 
           <div className="hamburger" onClick={handleClick}>
@@ -55,7 +56,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
   return (
     <div className="nav">
-      <Link to="/" className="hvr-bounce-in" ><h1>toystalgic</h1></Link> 
+      <Link to="/" className="hvr-logo-bounce-in" ><h1>toystalgic</h1></Link> 
         <nav>
           {showNavigation()}
         </nav>

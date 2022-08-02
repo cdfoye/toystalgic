@@ -35,59 +35,61 @@ function Signup(props) {
   };
 
   return (
-    <div className="login">
-    <div className="background-img">
-      <img className="desk-img" src={ BackgroundImg } alt="teddy bear"/>
+    <div className="signup background">
+      
+        <img className="img" src={ BackgroundImg } alt="teddy bear"/>
+          <div className="signup-heading">
+            <Link to="/login" className="hvr-bounce-in">← Go to Login </Link>
+              <h2>Signup</h2>
 
-      <Link to="/login">← Go to Login</Link>
+              <form onSubmit={handleFormSubmit}>
+                <div className="first-name-form">
+                  <label htmlFor="firstName">First Name:</label>
+                  <input 
+                  placeholder="enter your first name" 
+                  name="firstName" 
+                  type="firstName" 
+                  id="firstName" 
+                  onChange={handleChange}/>
+                </div>
 
-      <h2>Signup</h2>
-      <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="firstName">First Name:</label>
-          <input
-            placeholder="First"
-            name="firstName"
-            type="firstName"
-            id="firstName"
-            onChange={handleChange}
-          />
-        </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="lastName">Last Name:</label>
-          <input
-            placeholder="Last"
-            name="lastName"
-            type="lastName"
-            id="lastName"
-            onChange={handleChange}
-          />
-        </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="email">Email:</label>
-          <input
-            placeholder="youremail@test.com"
-            name="email"
-            type="email"
-            id="email"
-            onChange={handleChange}
-          />
-        </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="pwd">Password:</label>
-          <input
-            placeholder="******"
-            name="password"
-            type="password"
-            id="pwd"
-            onChange={handleChange}
-          />
-        </div>
-        <div className="flex-row flex-end">
-          <button type="submit">Submit</button>
-        </div>
-      </form>
-    </div></div>
+                <div className="last-name-form">
+                  <label htmlFor="lastName">Last Name:</label>
+                  <input
+                  placeholder="enter your last name"
+                  name="lastName"
+                  type="lastName"
+                  id="lastName"
+                  onChange={handleChange}/>
+                </div>
+
+                <div className="email-form">
+                  <label htmlFor="email">Email:</label>
+                  <input
+                  placeholder="enter your email"
+                  name="email"
+                  type="email"
+                  id="email"
+                  onChange={handleChange}/>
+                </div>
+
+                <div className="password-form">
+                  <label htmlFor="pwd">Password:</label>
+                  <input
+                  placeholder="enter your password"
+                  name="password"
+                  type="password"
+                  id="pwd"
+                  onChange={handleChange}/>
+                </div>
+
+                <div className="submit-btn">
+                  <button type="submit" className="signup-submit-btn hvr-buzz">Submit</button>
+                </div>
+            </form>
+          </div>
+      </div>
+    
   );
 }
 
