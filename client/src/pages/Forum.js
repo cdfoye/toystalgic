@@ -6,6 +6,7 @@ import PostForm from "../components/PostForm";
 
 import { QUERY_POSTS } from "../utils/queries";
 
+import BackgroundImg from "../assets/forum_bckgrnd.jpg";
 import "./ForumStyles.css";
 
 const Forum = () => {
@@ -13,11 +14,16 @@ const Forum = () => {
   const posts = data?.posts || [];
 
   return (
-    <div className="row">
-      <div className="column side mt">
+    <div
+      style={{
+        backgroundImage: `url(${BackgroundImg})`,
+        backgroundRepeat: "repeat-x",
+      }}
+    >
+      <div className="ForumRow">
         <PostForm />
       </div>
-      <div className="column middle mt">
+      <div className="ForumRow">
         {loading ? <div>Loading...</div> : <PostList posts={posts} />}
       </div>
     </div>

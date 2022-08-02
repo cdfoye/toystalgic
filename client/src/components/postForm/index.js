@@ -79,7 +79,7 @@ const PostForm = () => {
             <div className="">
               <textarea
                 name="postText"
-                placeholder="Here's a new thought..."
+                placeholder="Beep bop boop beep"
                 value={postText}
                 className="form-input w-100"
                 style={{ lineHeight: "1.5", resize: "vertical" }}

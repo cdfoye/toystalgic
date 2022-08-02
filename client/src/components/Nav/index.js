@@ -23,6 +23,15 @@ const Nav = () => {
               </Link>
             </li>
             <li>
+              <Link to="/forum" className="hvr-li-float" smooth>
+                Forum{" "}
+                <MdOutlineForum
+                  size={18}
+                  style={{ color: "#black", marginRight: ".2rem" }}
+                />
+              </Link>
+            </li>
+            <li>
               <a
                 href="/"
                 className="hvr-li-float"
@@ -67,7 +76,7 @@ const Nav = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" className="hvr-li-float" smooth>
+              <Link to="/forum" className="hvr-li-float" smooth>
                 Forum{" "}
                 <MdOutlineForum
                   size={18}
