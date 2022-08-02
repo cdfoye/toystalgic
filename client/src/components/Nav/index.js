@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
 import { FaBars, FaTimes } from "react-icons/fa";
+import { MdOutlineForum } from "react-icons/md";
 
 // function Nav() {
 const Nav = () => {
@@ -17,17 +18,16 @@ const Nav = () => {
         <div className="loggedin">
           <ul className={click ? "navbar active" : "navbar"}>
             <li>
-              <Link to="/orderHistory" className="hvr-float">
+              <Link to="/orderHistory" className="hvr-li-float">
                 Order History
               </Link>
             </li>
             <li>
-              <Link to="/forum" className="hvr-float">
-                Forum
-              </Link>
-            </li>
-            <li>
-              <a href="/" className="hvr-float" onClick={() => Auth.logout()}>
+              <a
+                href="/"
+                className="hvr-li-float"
+                onClick={() => Auth.logout()}
+              >
                 Logout
               </a>
             </li>
@@ -47,28 +47,32 @@ const Nav = () => {
         <div className="loggedout">
           <ul className={click ? "navbar active" : "navbar"}>
             <li>
-              <Link to="/" className="hvr-float" smooth="true">
+              <Link to="/" className="hvr-li-float" smooth>
                 Shop
               </Link>
             </li>
             <li>
-              <Link to="/login" className="hvr-float" smooth="true">
+              <Link to="/login" className="hvr-li-float" smooth>
                 Login
               </Link>
             </li>
             <li>
-              <Link to="/signup" className="hvr-float" smooth="true">
+              <Link to="/signup" className="hvr-li-float" smooth>
                 Signup
               </Link>
             </li>
             <li>
-              <Link to="/" className="hvr-float" smooth="true">
+              <Link to="/" className="hvr-li-float" smooth>
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="/forum" className="hvr-float" smooth="true">
-                Forum
+              <Link to="/" className="hvr-li-float" smooth>
+                Forum{" "}
+                <MdOutlineForum
+                  size={18}
+                  style={{ color: "#black", marginRight: ".2rem" }}
+                />
               </Link>
             </li>
           </ul>
@@ -87,7 +91,7 @@ const Nav = () => {
 
   return (
     <div className="nav">
-      <Link to="/" className="hvr-bounce-in">
+      <Link to="/" className="hvr-logo-bounce-in">
         <h1>toystalgic</h1>
       </Link>
       <nav>{showNavigation()}</nav>

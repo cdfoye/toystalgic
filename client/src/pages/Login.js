@@ -33,43 +33,49 @@ function Login(props) {
   };
 
   return (
-    <div className="login">
-      <div className="background-img">
-        <img className="desk-img" src={ BackgroundImg } alt="robot doing pushups"/>
-      <Link to="/signup">← Go to Signup</Link>
+    <div className="login background">
+      
+        <img className="img" src={ BackgroundImg } alt="robot doing pushups"/>
+          <div className="login-heading">
+            <Link to="/signup" className="hvr-bounce-in">Go to Signup →</Link>
+            <h2>Login</h2>
 
-      <h2>Login</h2>
-      <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="email">Email address:</label>
-          <input
-            placeholder="youremail@test.com"
-            name="email"
-            type="email"
-            id="email"
-            onChange={handleChange}
-          />
-        </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="pwd">Password:</label>
-          <input
-            placeholder="******"
-            name="password"
-            type="password"
-            id="pwd"
-            onChange={handleChange}
-          />
-        </div>
-        {error ? (
-          <div>
-            <p className="error-text">The provided credentials are incorrect</p>
+            <form onSubmit={handleFormSubmit}>
+              <div className="email-form">
+                <label htmlFor="email">Email address:</label>
+                  <input
+                  placeholder="enter your email"
+                  name="email"
+                  type="email"
+                  id="email"
+                  onChange={handleChange}
+                />
+              </div>
+
+              <div className="password-form">
+                <label htmlFor="pwd">Password:</label>
+                  <input
+                  placeholder="enter your password"
+                  name="password"
+                  type="password"
+                  id="pwd"
+                  onChange={handleChange}
+                />
+              </div>
+
+                {error ? (
+                <div>
+                <p className="error-text">The provided credentials are incorrect</p>
+                </div>
+                ) : null}
+
+                <div className="submit-btn">
+                  <button type="submit" className="login-submit-btn hvr-buzz">Submit</button>
+                </div>
+            </form>
           </div>
-        ) : null}
-        <div className="flex-row flex-end">
-          <button type="submit">Submit</button>
-        </div>
-      </form>
-    </div></div>
+      </div>
+
   );
 }
 

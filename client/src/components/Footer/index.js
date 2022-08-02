@@ -4,6 +4,7 @@ import React from "react";
 import "./FooterStyles.css"; 
 
 import { FaHome, FaPhone, FaMailBulk, FaFacebookSquare, FaInstagram, FaPinterest, FaTwitter, FaCcVisa, FaCcMastercard, FaCcPaypal, FaCcAmex, FaCcDiscover } from "react-icons/fa";
+import { MdOutlineForum } from "react-icons/md";
 
 const Footer = () => {
     return (
@@ -12,20 +13,23 @@ const Footer = () => {
                 
             <div className="social">
                     <h4>Social Media </h4>
-                    <p>Visit Us on your favorite social media site for our current events.</p>
-                        <div className="facebook">
+                    <p>Visit Us on your favorite social media site for our current events.<span class="highlight"> Check out our Collector's Forum for our most recent discussions.</span></p>
+                        <div className="socialIcon">
                             <a href="/" className="hvr-bounce-in" target="_blank" rel="noreferrer">
-                                <FaFacebookSquare size={36} style={{ color: "#4267B2", marginRight: ".75rem" }} />
+                                <FaFacebookSquare size={36} style={{ color: "#4267B2", marginRight: ".2rem" }} />
                             </a>
                         
                             <a href="/" className="hvr-bounce-in" target="_blank" rel="noreferrer">
-                                <FaInstagram size={36} style={{ color: "#E1306C", marginRight: ".75rem" }} />
+                                <FaInstagram size={36} style={{ color: "#E1306C", marginRight: ".2rem" }} />
                             </a>
                             <a href="/" className="hvr-bounce-in" target="_blank" rel="noreferrer">
-                                <FaTwitter size={36} style={{ color: "#1DA1F2", marginRight: ".75rem" }} />
+                                <FaTwitter size={36} style={{ color: "#1DA1F2", marginRight: ".2rem" }} />
                             </a>
                             <a href="/" className="hvr-bounce-in" target="_blank" rel="noreferrer">
-                                <FaPinterest size={36} style={{ color: "#E60023", marginRight: ".75rem" }} />
+                                <FaPinterest size={36} style={{ color: "#E60023", marginRight: ".2rem" }} />
+                            </a>
+                            <a href="/" className="hvr-bounce-in" target="_blank" rel="noreferrer">
+                            <MdOutlineForum size={36} style={{ color: "#F070A1", marginRight: ".2rem" }} />
                             </a>
                         </div>
                 </div>

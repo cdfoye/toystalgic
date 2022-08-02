@@ -64,7 +64,7 @@ const PostForm = () => {
 
   return (
     <div>
-      <h3>What's on your techy mind?</h3>
+      <h3>New Post</h3>
 
       {Auth.loggedIn() ? (
         <>
@@ -75,11 +75,8 @@ const PostForm = () => {
           >
             Character Count: {characterCount}/280
           </p>
-          <form
-            className="flex-row justify-center justify-space-between-md align-center"
-            onSubmit={handleFormSubmit}
-          >
-            <div className="col-12 col-lg-9">
+          <form className="" onSubmit={handleFormSubmit}>
+            <div className="">
               <textarea
                 name="postText"
                 placeholder="Here's a new thought..."
@@ -104,7 +101,7 @@ const PostForm = () => {
         </>
       ) : (
         <p>
-          You need to be logged in to share your thoughts. Please{" "}
+          You need to be logged in to create a new post. Please{" "}
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
       )}
