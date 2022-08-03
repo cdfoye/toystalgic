@@ -33,24 +33,21 @@ const SinglePost = () => {
       }}
     >
       <div className="wrap">
-        <div className="card card-rounded">
-          <h3 className="card-header ListBg-primary text-light p-2 m-0">
+        <div className="SingleCard SingleCard-rounded">
+          <h3 className="SingleCard-header PostBg-primary PostText-light single-p-2 single-m-0 commentCenter">
             {post.postAuthor} <br />
-            <span className="text-light" style={{ fontSize: "1rem" }}>
+            <span className="PostText-light" style={{ fontSize: "1rem" }}>
               on {post.createdAt}
             </span>
           </h3>
-          <div className="card-body bg-light">
+          <div className="SingleCard-body Postbg-light commentCenter">
             <blockquote className="blockQuote">{post.postText}</blockquote>
           </div>
 
-          <div className="my-3">
+          <div className="Postbg-light">
             <CommentList comments={post.comments} />
           </div>
-          <div
-            className="m-3 p-4 card-rounded buttonContainer"
-            style={{ border: "1px solid #1a1a1a" }}
-          >
+          <div className="Postbg-gray Single-p-4 SingleCard-rounded buttonContainer single-my-3">
             <CommentForm postId={post._id} />
           </div>
         </div>

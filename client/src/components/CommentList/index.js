@@ -9,12 +9,12 @@ const CommentList = ({ comments = [] }) => {
 
   return (
     <>
-      <div className="newComment p-2">Comments</div>
-      <div className="">
+      <div className="newComment Comment-p-2">Comments</div>
+      <div className="commentBg-primary">
         {comments &&
           comments.map((comment) => (
             <div key={comment._id} className="outer">
-              <div className="text-light commentWidth">
+              <div className="comment-text-light commentWidth">
                 <p className="commentInfo ComCard-header textDisplay">
                   {/* &#8226; adds a bullet in the text  */}
                   {comment.commentAuthor} &#8226; {comment.createdAt}:
