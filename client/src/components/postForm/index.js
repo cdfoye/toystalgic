@@ -103,9 +103,15 @@ const PostForm = () => {
           </form>
         </>
       ) : (
-        <p>
+        <p className="countText">
           You need to be logged in to create a new post. Please{" "}
-          <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+          <Link className="logoutText" to="/login">
+            login
+          </Link>{" "}
+          or{" "}
+          <Link className="logoutText" to="/signup">
+            signup.
+          </Link>
         </p>
       )}
     </div>

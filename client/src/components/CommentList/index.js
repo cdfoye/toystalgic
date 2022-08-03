@@ -1,30 +1,25 @@
 import React from "react";
 
+import "./CommentListStyles.css";
+
 const CommentList = ({ comments = [] }) => {
   if (!comments.length) {
-    return <h3>No Comments Yet</h3>;
+    return <div className="newComment">No Comments Yet</div>;
   }
 
   return (
     <>
-      <h3
-        className="p-5 display-inline-block"
-        style={{ borderBottom: "1px dotted #1a1a1a" }}
-      >
-        Comments
-      </h3>
-      <div className="flex-row my-4">
+      <div className="newComment p-2">Comments</div>
+      <div className="">
         {comments &&
           comments.map((comment) => (
-            <div key={comment._id} className="col-12 mb-3 pb-3">
-              <div className="p-3 bg-dark text-light">
-                <h5 className="card-header">
-                  {comment.commentAuthor} commented{" "}
-                  <span style={{ fontSize: "0.825rem" }}>
-                    on {comment.createdAt}
-                  </span>
-                </h5>
-                <p className="card-body">{comment.commentText}</p>
+            <div key={comment._id} className="outer">
+              <div className="text-light commentWidth">
+                <p className="commentInfo ComCard-header textDisplay">
+                  {/* &#8226; adds a bullet in the text  */}
+                  {comment.commentAuthor} &#8226; {comment.createdAt}:
+                </p>
+                <p className="commentText textDisplay">{comment.commentText}</p>
               </div>
             </div>
           ))}

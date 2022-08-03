@@ -9,6 +9,9 @@ import CommentForm from "../components/CommentForm";
 
 import { QUERY_SINGLE_POST } from "../utils/queries";
 
+import BackgroundImg from "../assets/forum_bckgrnd.jpg";
+import "./SinglePostStyles.css";
+
 const SinglePost = () => {
   // Use `useParams()` to retrieve value of the route parameter `:profileId`
   const { postId } = useParams();
@@ -24,32 +27,33 @@ const SinglePost = () => {
     return <div>Loading...</div>;
   }
   return (
-    <div className="my-3">
-      <h3 className="card-header bg-dark text-light p-2 m-0">
-        {post.postAuthor} <br />
-        <span style={{ fontSize: "1rem" }}>
-          had this post on {post.createdAt}
-        </span>
-      </h3>
-      <div className="bg-light py-4">
-        <blockquote
-          className="p-4"
-          style={{
-            fontSize: "1.5rem",
-            fontStyle: "italic",
-            border: "2px dotted #1a1a1a",
-            lineHeight: "1.5",
-          }}
-        >
-          {post.postText}
-        </blockquote>
-      </div>
+    <div
+      style={{
+        backgroundImage: `url(${BackgroundImg})`,
+      }}
+    >
+      <div className="wrap">
+        <div className="card card-rounded">
+          <h3 className="card-header ListBg-primary text-light p-2 m-0">
+            {post.postAuthor} <br />
+            <span className="text-light" style={{ fontSize: "1rem" }}>
+              on {post.createdAt}
+            </span>
+          </h3>
+          <div className="card-body bg-light">
+            <blockquote className="blockQuote">{post.postText}</blockquote>
+          </div>
 
-      <div className="my-5">
-        <CommentList comments={post.comments} />
-      </div>
-      <div className="m-3 p-4" style={{ border: "1px dotted #1a1a1a" }}>
-        <CommentForm postId={post._id} />
+          <div className="my-3">
+            <CommentList comments={post.comments} />
+          </div>
+          <div
+            className="m-3 p-4 card-rounded buttonContainer"
+            style={{ border: "1px solid #1a1a1a" }}
+          >
+            <CommentForm postId={post._id} />
+          </div>
+        </div>
       </div>
     </div>
   );

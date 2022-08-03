@@ -76,10 +76,20 @@ button {
 .newPost {
   color: white;
   font-family: "Gloria Hallelujah", cursive;
+  font-size: 1.5em;
+  background-color: #2e1d4985;
 }
 
 .countText {
   color: white;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #2e1d4985;
+}
+
+.logoutText {
+  color: #0090e5;
   font-family: "Gloria Hallelujah", cursive;
 }
 

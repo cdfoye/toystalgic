@@ -6,6 +6,8 @@ import { ADD_COMMENT } from "../../utils/mutations";
 
 import Auth from "../../utils/auth";
 
+import "./CommentFormStyles.css";
+
 const CommentForm = ({ postId }) => {
   const [commentText, setCommentText] = useState("");
   const [characterCount, setCharacterCount] = useState(0);
@@ -41,12 +43,12 @@ const CommentForm = ({ postId }) => {
 
   return (
     <div>
-      <h4>What are your thoughts on this thought?</h4>
+      <div className="addComment">Comment on this Post</div>
 
       {Auth.loggedIn() ? (
         <>
           <p
-            className={`m-0 ${
+            className={`m-0 countComment ${
               characterCount === 280 || error ? "text-danger" : ""
             }`}
           >
@@ -62,23 +64,33 @@ const CommentForm = ({ postId }) => {
                 name="commentText"
                 placeholder="Add your comment..."
                 value={commentText}
-                className="form-input w-100"
+                className="textArea form-input w-100"
                 style={{ lineHeight: "1.5", resize: "vertical" }}
                 onChange={handleChange}
               ></textarea>
             </div>
 
-            <div className="col-12 col-lg-3">
-              <button className="btn btn-primary btn-block py-3" type="submit">
+            <div className="col-12 col-lg-3 buttonCenter">
+              <button
+                className="ComListBtn ComListBtn-primary ComListBtn-block py-3"
+                type="submit"
+              >
                 Add Comment
               </button>
             </div>
           </form>
         </>
       ) : (
-        <p>
-          You need to be logged in to share your thoughts. Please{" "}
-          <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+        <p className="addText">
+          * You need to be logged in to add a comment. Please{" "}
+          <Link className="logoutText" to="/login">
+            login
+          </Link>{" "}
+          or{" "}
+          <Link className="logoutText" to="/signup">
+            signup{" "}
+          </Link>
+          *
         </p>
       )}
     </div>
