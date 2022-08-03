@@ -48,7 +48,7 @@ function ProductItem(item) {
     
     <div className="card">
       <div className="product-image">
-        <div className="img">
+        <div className="img img-hover-zoom">
           <Link to={`/products/${_id}`}><img alt={name} src={`/images/${image}`}/><BsPlusCircle className="overlay-img" size={40} style={{ color: "#white", marginRight: ".75rem" }} /></Link>
 
             <div className="overlay-btn">
