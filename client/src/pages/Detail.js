@@ -15,7 +15,6 @@ import { idbPromise } from '../utils/helpers';
 import spinner from '../assets/spinner.gif';
 import "./DetailStyles.css";
 
-
 function Detail() {
   const [state, dispatch] = useStoreContext();
   const { id } = useParams();
@@ -88,8 +87,8 @@ function Detail() {
       {currentProduct && cart ? (
         
         <div className="single-product">
-          <div className="container-img img-hover-zoom">
-            <img src={`/images/${currentProduct.image}`} alt={currentProduct.name} />
+          <div className="container-img img_producto_container">
+            <img src={`/images/${currentProduct.image}`} className="img_producto" alt={currentProduct.name} />
           </div>
 
           <div className="product-info">

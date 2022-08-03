@@ -9,7 +9,6 @@
     font-family: 'Rubik', sans-serif;
 }
 
-
 h3 {
     font-family: 'Gloria Hallelujah', cursive;
 }
@@ -24,13 +23,11 @@ h3 {
     justify-content: center; 
 }
 
-
 @media screen and (max-width: 2400px) {
 .product-grid {
     grid-template-columns: repeat(4, 1fr);
     }
 }
-
 
 @media screen and (max-width: 1800px) {
     .product-grid {

@@ -14,10 +14,12 @@
     padding: 2rem;
     background-color: #333;
     margin-top: 0px !important;
+    /* position: fixed;
+    bottom: 0; */
 }
 
 .footer-container {
-    max-width: 1600px;
+    max-width: 100%;
     margin-left: 13%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -112,6 +114,13 @@
 }
 
 /* MEDIA SCREENS--------------------------- */
+@media screen and (max-width: 2400) {
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .footer-container {
         max-width: 90%;
