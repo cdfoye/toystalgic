@@ -27,7 +27,6 @@ h3 {
 
 @media screen and (max-width: 2400px) {
 .product-grid {
-    margin: auto;
     grid-template-columns: repeat(4, 1fr);
     }
 }
@@ -35,14 +34,12 @@ h3 {
 
 @media screen and (max-width: 1800px) {
     .product-grid {
-        margin: auto;
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (max-width: 1000px) {
     .product-grid {
-        margin: auto;
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -50,7 +47,6 @@ h3 {
 @media screen and (max-width: 740px) {
     .product-grid {
         max-width: 80%;
-        margin: auto;
         grid-template-columns: 1fr;
     }
     .product-heading h2 {

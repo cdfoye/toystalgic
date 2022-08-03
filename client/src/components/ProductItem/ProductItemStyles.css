@@ -17,7 +17,7 @@
     width: 100%;
     position: absolute;
     align-self: center;
-    bottom: 5.75px;
+    bottom: 0px;
     left: auto;
     right: auto;
     overflow: visible;
@@ -43,19 +43,20 @@
 
 .overlay-img:hover, .product-image:hover {
     color: #12c998;
-    opacity: 80%;
 }
 
 /* CARD FOOTER------------ */
 .card-footer {
     max-width: 100%;
     margin-bottom: 1px;
+    margin-top: 4px;
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
 .left {
     text-align: start;
+    margin-bottom: 0px;
 }
 
 .right {
@@ -109,6 +110,20 @@ p:hover {
 .hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
+}
+
+/* SLOW MO ZOOM--------------------- */
+.img-hover-zoom {
+    height: 100%;
+    overflow: hidden; 
+}
+.img-hover-zoom img {
+    transform-origin: 50% 65%;
+    transition: transform 5s, filter 3s ease-in-out;
+}
+.img-hover-zoom:hover img {
+    filter: brightness(100%);
+    transform: scale(1.5);
 }
 
 
