@@ -69,34 +69,34 @@ const PostForm = () => {
       {Auth.loggedIn() ? (
         <>
           <p
-            className={`m-0 countText ${
-              characterCount === 280 || error ? "text-danger" : ""
+            className={`Form-m-0 countText ${
+              characterCount === 280 || error ? "logoutText" : ""
             }`}
           >
             Character Count: {characterCount}/280
           </p>
-          <form className="Textpost" onSubmit={handleFormSubmit}>
+          <form className="PostForm-form Textpost" onSubmit={handleFormSubmit}>
             <div className="Textpost">
               <textarea
                 name="postText"
                 placeholder="beep bop boop beep"
                 value={postText}
-                className="form-input w-100"
+                className="FormInput Form-w-100"
                 style={{ lineHeight: "1.5", resize: "vertical" }}
                 onChange={handleChange}
               ></textarea>
             </div>
 
-            <div className="col-12 col-lg-3">
+            <div className="Form-col-12 Form-col-lg-3">
               <button
-                className="Forumbtn btn-primary btn-block py-3"
+                className="Forumbtn Forumbtn-primary Forumbtn-block Form-py-3"
                 type="submit"
               >
                 Add Post
               </button>
             </div>
             {error && (
-              <div className="col-12 my-3 bg-danger text-white p-3">
+              <div className="Form-col-12 Form-my-3 logoutText Form-p-3">
                 {error.message}
               </div>
             )}

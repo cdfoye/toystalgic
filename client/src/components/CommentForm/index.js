@@ -48,34 +48,34 @@ const CommentForm = ({ postId }) => {
       {Auth.loggedIn() ? (
         <>
           <p
-            className={`m-0 countComment ${
+            className={`new-m-0 countComment ${
               characterCount === 280 || error ? "text-danger" : ""
             }`}
           >
             Character Count: {characterCount}/280
-            {error && <span className="ml-2">{error.message}</span>}
+            {error && <span className="new-ml-2">{error.message}</span>}
           </p>
           <form
-            className="flex-row justify-center justify-space-between-md align-center"
+            className="CommentForm-form new-flex-row new-justify-center new-justify-space-between-md new-align-center"
             onSubmit={handleFormSubmit}
           >
-            <div className="col-12 col-lg-9">
+            <div className="new-col-12 new-col-lg-9">
               <textarea
                 name="commentText"
                 placeholder="Add your comment..."
                 value={commentText}
-                className="textArea form-input w-100"
+                className="textArea new-form-input"
                 style={{ lineHeight: "1.5", resize: "vertical" }}
                 onChange={handleChange}
               ></textarea>
             </div>
 
-            <div className="col-12 col-lg-3 buttonCenter">
+            <div className="new-col-12 new-col-lg-3 buttonCenter">
               <button
-                className="ComListBtn ComListBtn-primary ComListBtn-block py-3"
+                className="ComListBtn ComListBtn-primary ComListBtn-block"
                 type="submit"
               >
-                Add Comment
+                Add Comments
               </button>
             </div>
           </form>
@@ -83,11 +83,11 @@ const CommentForm = ({ postId }) => {
       ) : (
         <p className="addText">
           * You need to be logged in to add a comment. Please{" "}
-          <Link className="logoutText" to="/login">
+          <Link className="com-logoutText" to="/login">
             login
           </Link>{" "}
           or{" "}
-          <Link className="logoutText" to="/signup">
+          <Link className="com-logoutText" to="/signup">
             signup{" "}
           </Link>
           *

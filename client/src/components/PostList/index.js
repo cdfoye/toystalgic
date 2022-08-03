@@ -13,15 +13,18 @@ const PostList = ({ posts, title, showTitle = true, showFirstName = true }) => {
       {showTitle && <h3>{title}</h3>}
       {posts &&
         posts.map((post) => (
-          <div key={post._id} className="card card-rounded mb-3">
-            <h4 className="card-header ListBg-primary text-light p-2 m-0">
+          <div
+            key={post._id}
+            className="ListCard ListCard-rounded Listmb-3 ListCenter"
+          >
+            <h2 className="ListCard-header ListBg-primary ListText-light Listp-2 Listm-0">
               {showFirstName ? (
                 <Link
-                  className="text-light"
+                  className="ListText-light"
                   to={`/profiles/${post.postAuthor}`}
                 >
                   {post.postAuthor} <br />
-                  <span className="text-light" style={{ fontSize: "1rem" }}>
+                  <span className="ListText-light" style={{ fontSize: "1rem" }}>
                     {post.createdAt}
                   </span>
                 </Link>
@@ -30,12 +33,12 @@ const PostList = ({ posts, title, showTitle = true, showFirstName = true }) => {
                   <span style={{ fontSize: "1rem" }}>{post.createdAt}</span>
                 </>
               )}
-            </h4>
-            <div className="card-body bg-light p-2">
-              <p className="text-light">{post.postText}</p>
+            </h2>
+            <div className="ListCard-body whiteBackground Listp-2">
+              <p className="ListText-light">{post.postText}</p>
             </div>
             <Link
-              className="text-light ListBtn ListBtn-primary ListBtn-block ListBtn-squared"
+              className="ListText-light ListBtn ListBtn-primary ListBtn-block ListBtn-squared"
               to={`/post/${post._id}`}
             >
               join the discussion
