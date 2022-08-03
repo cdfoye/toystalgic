@@ -28,7 +28,7 @@ const Footer = () => {
                             <a href="/" className="hvr-bounce-in" target="_blank" rel="noreferrer">
                                 <FaPinterest size={36} style={{ color: "#E60023", marginRight: ".2rem" }} />
                             </a>
-                            <a href="/" className="hvr-bounce-in" target="_blank" rel="noreferrer">
+                            <a href="/forum" className="hvr-bounce-in" target="_blank" rel="noreferrer">
                             <MdOutlineForum size={36} style={{ color: "#F070A1", marginRight: ".2rem" }} />
                             </a>
                         </div>
@@ -40,7 +40,7 @@ const Footer = () => {
                         <div className="navigation-left">
                             <p><a href="/" className="hvr-bounce-in">About Us</a></p>
                             <p><a href="https://www.buzzfeed.com/tayloraowens/childhood-toys-guess-age-quiz" className="hvr-bounce-in" target="_blank" rel="noreferrer">Buzzfeed Quiz</a></p>
-                            <p><a href="/" className="hvr-bounce-in">Collector's Forum</a></p>
+                            <p><a href="/forum" className="hvr-bounce-in">Collector's Forum</a></p>
                             <p><a href="/" className="hvr-bounce-in">Return Policy</a></p>
                         </div>
                         
