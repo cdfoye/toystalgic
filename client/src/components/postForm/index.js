@@ -64,22 +64,22 @@ const PostForm = () => {
 
   return (
     <div>
-      <h3>New Post</h3>
+      <div className="newPost">New Post</div>
 
       {Auth.loggedIn() ? (
         <>
           <p
-            className={`m-0 ${
+            className={`m-0 countText ${
               characterCount === 280 || error ? "text-danger" : ""
             }`}
           >
             Character Count: {characterCount}/280
           </p>
-          <form className="" onSubmit={handleFormSubmit}>
-            <div className="">
+          <form className="Textpost" onSubmit={handleFormSubmit}>
+            <div className="Textpost">
               <textarea
                 name="postText"
-                placeholder="Beep bop boop beep"
+                placeholder="beep bop boop beep"
                 value={postText}
                 className="form-input w-100"
                 style={{ lineHeight: "1.5", resize: "vertical" }}
@@ -88,7 +88,10 @@ const PostForm = () => {
             </div>
 
             <div className="col-12 col-lg-3">
-              <button className="btn btn-primary btn-block py-3" type="submit">
+              <button
+                className="Forumbtn btn-primary btn-block py-3"
+                type="submit"
+              >
                 Add Post
               </button>
             </div>
