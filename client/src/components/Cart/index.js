@@ -9,6 +9,7 @@ import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import "./CartStyles.css";
 import { RiShoppingCartLine } from "react-icons/ri";
+import { AiOutlineWarning } from "react-icons/ai";
 
 // TODO: Add a comment describing the functionality of loadStripe
 // Your comment here
@@ -102,7 +103,7 @@ const Cart = () => {
       ) : (
         <h3>
           <span role="img" aria-label="shocked">
-            😱
+            <AiOutlineWarning size={30} style={{ color: "#ff6934", marginLeft: "2%", }} role="img" aria-label="trash" />
           </span>
           You haven't added anything to your cart yet!
         </h3>
