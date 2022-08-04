@@ -87,8 +87,8 @@ function Detail() {
       {currentProduct && cart ? (
         
         <div className="single-product">
-          <div className="container-img img_producto_container">
-            <img src={`/images/${currentProduct.image}`} className="img_producto" alt={currentProduct.name} />
+          <div className="container-img-product img-single-hover-zoom">
+            <img src={`/images/${currentProduct.image}`} alt={currentProduct.name} />
           </div>
 
           <div className="product-info">

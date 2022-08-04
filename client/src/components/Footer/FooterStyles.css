@@ -14,8 +14,9 @@
     padding: 2rem;
     background-color: #333;
     margin-top: 0px !important;
-    /* position: fixed;
-    bottom: 0; */
+    /* position: absolute;
+    bottom: 0px;
+    height: 252px; */
 }
 
 .footer-container {
