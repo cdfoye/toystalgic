@@ -7,6 +7,9 @@ import {
   createHttpLink,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
+// import {Swiper} from "swiper/react";
+// import "swiper/css";
+// import "swiper/css/navigation";
 
 import Home from "./pages/Home";
 import Detail from "./pages/Detail";
@@ -19,7 +22,9 @@ import { StoreProvider } from "./utils/GlobalState";
 import Success from "./pages/Success";
 import OrderHistory from "./pages/OrderHistory";
 import SinglePost from "./pages/SinglePost";
-import Forum from "./pages/Forum";
+import AboutUs from "./components/AboutUs/AboutUsDisplay";
+
+// import Forum from "./pages/Forum";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -56,7 +61,8 @@ function App() {
               <Route path="/products/:id" element={<Detail />} />
               <Route path="*" element={<NoMatch />} />
               <Route path="/post/:postId" element={<SinglePost />} />
-              <Route path="/forum" element={<Forum />} />
+              {/* <Route path="/forum" element={<Forum />} /> */}
+              <Route path="/AboutUs" element={<AboutUs />} />
             </Routes>
             <Footer />
           </StoreProvider>

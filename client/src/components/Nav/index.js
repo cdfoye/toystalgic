@@ -71,7 +71,7 @@ const Nav = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" className="hvr-li-float" smooth>
+              <Link to="/AboutUs" className="hvr-li-float" smooth>
                 About Us
               </Link>
             </li>
