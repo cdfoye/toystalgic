@@ -40,7 +40,6 @@ const resolvers = {
         });
 
         user.orders.sort((a, b) => b.purchaseDate - a.purchaseDate);
-
         return user;
       }
 
@@ -121,7 +120,6 @@ const resolvers = {
       return { token, user };
     },
     addOrder: async (parent, { products }, context) => {
-      console.log(context);
       if (context.user) {
         const order = new Order({ products });
 

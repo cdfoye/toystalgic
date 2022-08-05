@@ -1,14 +1,14 @@
-import "./CategoryMenuStyles.css"; 
+import "./CategoryMenuStyles.css";
 
-import React, { useEffect } from 'react';
-import { useQuery } from '@apollo/client';
-import { useStoreContext } from '../../utils/GlobalState';
+import React, { useEffect } from "react";
+import { useQuery } from "@apollo/client";
+import { useStoreContext } from "../../utils/GlobalState";
 import {
   UPDATE_CATEGORIES,
   UPDATE_CURRENT_CATEGORY,
-} from '../../utils/actions';
-import { QUERY_CATEGORIES } from '../../utils/queries';
-import { idbPromise } from '../../utils/helpers';
+} from "../../utils/actions";
+import { QUERY_CATEGORIES } from "../../utils/queries";
+import { idbPromise } from "../../utils/helpers";
 
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
@@ -24,10 +24,10 @@ function CategoryMenu() {
         categories: categoryData.categories,
       });
       categoryData.categories.forEach((category) => {
-        idbPromise('categories', 'put', category);
+        idbPromise("categories", "put", category);
       });
     } else if (!loading) {
-      idbPromise('categories', 'get').then((categories) => {
+      idbPromise("categories", "get").then((categories) => {
         dispatch({
           type: UPDATE_CATEGORIES,
           categories: categories,
@@ -47,9 +47,27 @@ function CategoryMenu() {
     // <div className="cat-container">
     <div className="category">
       <h2>Shop by Decade:</h2>
-          {categories.map((item) => (
-            <button key={item._id} className="cat-btn hvr-hollow" onClick={() => { handleClick(item._id); }}>{item.name} </button>
-          ))}
+      {categories.map((item) => (
+        <button
+          key={item._id}
+          className="cat-btn hvr-hollow"
+          onClick={() => {
+            handleClick(item._id);
+          }}
+        >
+          {item.name}{" "}
+        </button>
+      ))}
+      <button
+        key={"all"}
+        className="cat-btn hvr-hollow"
+        onClick={() => {
+          window.location.reload();
+        }}
+      >
+        {" "}
+        View All{" "}
+      </button>
     </div>
   );
 }

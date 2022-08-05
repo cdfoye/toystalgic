@@ -18,6 +18,7 @@ const Forum = () => {
       style={{
         backgroundImage: `url(${BackgroundImg})`,
         backgroundRepeat: "repeat-x",
+        backgroundSize: "cover",
       }}
     >
       <div className="ForumRow">
