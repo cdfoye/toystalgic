@@ -38,7 +38,7 @@ const Footer = () => {
                     <h4>Navigation </h4>
                     <div className="nav-container">
                         <div className="navigation-left">
-                            <p><a href="/" className="hvr-bounce-in">About Us</a></p>
+                            <p><a href="/AboutUs" className="hvr-bounce-in">About Us</a></p>
                             <p><a href="https://www.buzzfeed.com/tayloraowens/childhood-toys-guess-age-quiz" className="hvr-bounce-in" target="_blank" rel="noreferrer">Buzzfeed Quiz</a></p>
                             <p><a href="/forum" className="hvr-bounce-in">Collector's Forum</a></p>
                             <p><a href="/" className="hvr-bounce-in">Return Policy</a></p>
