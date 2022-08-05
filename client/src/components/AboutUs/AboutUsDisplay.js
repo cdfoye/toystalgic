@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/swiper.min.css';
 import 'swiper/components/navigation/navigation.min.css';
 
+// import "./AboutUsStyle.css";
+
 import { Navigation } from "swiper";
 import AboutUsCard from './AboutUsCard';
 

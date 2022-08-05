@@ -25,7 +25,7 @@ import OrderHistory from "./pages/OrderHistory";
 import SinglePost from "./pages/SinglePost";
 import AboutUs from "./components/AboutUs/AboutUsDisplay";
 
-// import Forum from "./pages/Forum";
+import Forum from "./pages/Forum";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -62,7 +62,7 @@ function App() {
               <Route path="/products/:id" element={<Detail />} />
               <Route path="*" element={<NoMatch />} />
               <Route path="/post/:postId" element={<SinglePost />} />
-              {/* <Route path="/forum" element={<Forum />} /> */}
+              <Route path="/forum" element={<Forum />} /> 
               <Route path="/AboutUs" element={<AboutUs />} />
             </Routes>
             <Footer />
