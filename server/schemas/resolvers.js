@@ -58,7 +58,9 @@ const resolvers = {
     //added 7/28 - cf
     me: async (parent, args, context) => {
       if (context.user) {
-        return User.findOne({ _id: context.user_id }).populate("posts");
+        return User.findOne({ _id: context.user_id })
+          .populate("posts")
+          .populate("orders");
       }
       throw new AuthenticationError("You need to be logged in!");
     },
