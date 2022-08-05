@@ -25,7 +25,7 @@ import OrderHistory from "./pages/OrderHistory";
 import SinglePost from "./pages/SinglePost";
 import AboutUs from "./components/AboutUs/AboutUsDisplay";
 
-// import Forum from "./pages/Forum";
+import Forum from "./pages/Forum";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
