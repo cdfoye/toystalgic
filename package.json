@@ -14,9 +14,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.19"
   },
   "dependencies": {
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "swiper": "^8.3.2"
   }
 }

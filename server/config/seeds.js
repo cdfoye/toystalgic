@@ -348,6 +348,68 @@ db.once("open", async () => {
       price: 18.99,
       quantity: 12,
     },
+    {
+      name: "Gremlin",
+      category: categories[3]._id,
+      description:
+        "Creatures who transform into small, destructive, aggressive monsters that wreak havoc",
+      image: "gremlin.jpg",
+      price: 14.99,
+      quantity: 4,
+    },
+    {
+      name: "Mr. T Toy",
+      category: categories[3]._id,
+      description:
+        "The Muscle for the A-Team, able to perform exceptional feats of strength",
+      image: "mr-t.jpg",
+      price: 19.99,
+      quantity: 10,
+    },
+    {
+      name: "Cookie Monster",
+      category: categories[2]._id,
+      description: "",
+      image: "cookieMonster.jpg",
+      price: 39.99,
+      quantity: 30,
+    },
+    {
+      name: "Pound Pupppies",
+      category: categories[3]._id,
+      description:
+        "Variety of plush stuffed dog dolls with floppy ears and droopy eyes",
+      image: "poundPuppies.jpg",
+      price: 9.99,
+      quantity: 16,
+    },
+    {
+      name: "Pac-Man Arcade Game",
+      category: categories[3]._id,
+      description:
+        "1980 maze action video game developed and released by Namco for arcades",
+      image: "pacman.jpg",
+      price: 519.99,
+      quantity: 2,
+    },
+    {
+      name: "Back To The Future Delorian",
+      category: categories[3]._id,
+      description:
+        "Toy car modeled from the Delorian from the Back To The Future movie",
+      image: "delorian.jpg",
+      price: 18.99,
+      quantity: 12,
+    },
+    {
+      name: "Gumby",
+      category: categories[3]._id,
+      description:
+        "American clay animation franchise, centered on the titular green clay humanoid character",
+      image: "gumby.jpg",
+      price: 4.99,
+      quantity: 23,
+    },
     // {
     //   name: "Simon Says",
     //   category: categories[2]._id,
@@ -393,6 +455,13 @@ db.once("open", async () => {
     lastName: "Zarges",
     email: "aubree@email.com",
     password: "Aubree123",
+  });
+
+  await User.create({
+    firstName: "Chad",
+    lastName: "Bryon",
+    email: "brony4life@email.com",
+    password: "RedFlag",
   });
 
   console.log("users seeded");

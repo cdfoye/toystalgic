@@ -13,7 +13,7 @@ const Footer = () => {
                 
             <div className="social">
                     <h4>Social Media </h4>
-                    <p>Visit Us on your favorite social media site for our current events.<span class="highlight"> Check out our Collector's Forum for our most recent discussions.</span></p>
+                    <p>Visit Us on your favorite social media site for our current events.<span className="highlight"> Check out our Collector's Forum for our most recent discussions.</span></p>
                         <div className="socialIcon">
                             <a href="/" className="hvr-bounce-in" target="_blank" rel="noreferrer">
                                 <FaFacebookSquare size={36} style={{ color: "#4267B2", marginRight: ".2rem" }} />
@@ -38,7 +38,7 @@ const Footer = () => {
                     <h4>Navigation </h4>
                     <div className="nav-container">
                         <div className="navigation-left">
-                            <p><a href="/" className="hvr-bounce-in">About Us</a></p>
+                            <p><a href="/AboutUs" className="hvr-bounce-in">About Us</a></p>
                             <p><a href="https://www.buzzfeed.com/tayloraowens/childhood-toys-guess-age-quiz" className="hvr-bounce-in" target="_blank" rel="noreferrer">Buzzfeed Quiz</a></p>
                             <p><a href="/forum" className="hvr-bounce-in">Collector's Forum</a></p>
                             <p><a href="/" className="hvr-bounce-in">Return Policy</a></p>
