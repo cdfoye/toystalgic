@@ -100,7 +100,7 @@ db.once("open", async () => {
     },
     {
       name: "My Little Pony",
-      category: categories[4]._id,
+      category: categories[3]._id,
       description: "Colorful ponies with unique symbols on their flanks",
       image: "pony.jpg",
       price: 14.99,
@@ -117,7 +117,7 @@ db.once("open", async () => {
     },
     {
       name: "Game Boy",
-      category: categories[4]._id,
+      category: categories[3]._id,
       description:
         "Japanese manufactured handheld gaming console with many different game options",
       image: "game-boy.jpg",
@@ -126,7 +126,7 @@ db.once("open", async () => {
     },
     {
       name: "Smurfs",
-      category: categories[3]._id,
+      category: categories[1]._id,
       description:
         "Belgian comic centered around fictional colony of small, blue, humanoid creatures who live in the forest",
       image: "smurfs.jpg",
@@ -266,7 +266,7 @@ db.once("open", async () => {
     },
     {
       name: "Robot Dog",
-      category: categories[4]._id,
+      category: categories[5]._id,
       description:
         "Robot designed to look like a dog that has similar characteristics to a real dog",
       image: "robot-dog.jpg",
@@ -284,7 +284,7 @@ db.once("open", async () => {
     },
     {
       name: "iPod",
-      category: categories[3]._id,
+      category: categories[4]._id,
       description:
         "Handheld music player that can hold 1,000 songs in your pocket",
       image: "ipod.jpg",
@@ -334,7 +334,7 @@ db.once("open", async () => {
     },
     {
       name: "FAO Schwartz Piano",
-      category: categories[2]._id,
+      category: categories[3]._id,
       description: "Giant dance-on piano",
       image: "faoKeyboard.jpg",
       price: 59.99,
@@ -342,7 +342,7 @@ db.once("open", async () => {
     },
     {
       name: "Rockem Sockem Robots",
-      category: categories[4]._id,
+      category: categories[1]._id,
       description: "Two player action toy and game with two dueling boxers",
       image: "rockemsockem.jpg",
       price: 18.99,
@@ -403,7 +403,7 @@ db.once("open", async () => {
     },
     {
       name: "Gumby",
-      category: categories[3]._id,
+      category: categories[0]._id,
       description:
         "American clay animation franchise, centered on the titular green clay humanoid character",
       image: "gumby.jpg",
