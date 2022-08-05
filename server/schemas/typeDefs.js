@@ -62,7 +62,7 @@ const typeDefs = gql`
     product(_id: ID!): Product
     me: User
     users: [User]
-    user(firstName: String!): User
+    user: User
     posts(firstName: String): [Post]
     post(postId: ID!): Post
     order(_id: ID!): Order
