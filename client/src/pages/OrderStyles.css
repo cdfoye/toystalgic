@@ -1,23 +1,19 @@
 .container {
-    margin-top: 200px;
-    margin-bottom: 200px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 h1 {
-    font-family: 'Gloria Hallelujah', cursive;
-    text-align: center;
+  font-family: "Gloria Hallelujah", cursive;
+  text-align: center;
 }
 
 .flex-row {
-    max-width: 85%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    padding-bottom: 2rem;
-    justify-content: center; 
-<<<<<<< HEAD
-} 
-=======
+  max-width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding-bottom: 2rem;
+  justify-content: center;
 }
->>>>>>> ea14bef5e3216ec33527467ef5563a869c43e1bd
