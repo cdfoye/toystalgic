@@ -6,11 +6,6 @@ export default function AboutUsCard(props) {
     width: '18rem',
   };
 
-  // // Helper function that generates a random width for our placeholder images
-  // const randomWidth = () => {
-  //   const number = Math.random() * (300 - 200) + 200;
-  //   return number.toString().split('.')[0];
-  // };
 
   return (
     

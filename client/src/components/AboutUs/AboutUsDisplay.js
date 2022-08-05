@@ -1,8 +1,8 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
+import 'swiper/swiper.min.css';
+import 'swiper/components/navigation/navigation.min.css';
+
 import { Navigation } from "swiper";
 import AboutUsCard from './AboutUsCard';
 
@@ -37,8 +37,8 @@ export default function Display() {
     <Swiper style={{
       width: '18rem',
     }} navigation={true} modules={[Navigation]} className="mySwiper">
-     {data.map(person=> <SwiperSlide> <AboutUsCard name={person.name} description={person.description} id={person.id} key={person.id} /></SwiperSlide>)}
-    
+     {data.map(person=> <SwiperSlide > <AboutUsCard name={person.name} description={person.description} id={person.id} /></SwiperSlide>)}
+
     </Swiper>
     
      
