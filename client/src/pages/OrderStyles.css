@@ -1,14 +1,14 @@
-.container {
-  margin-top: 200px;
-  margin-bottom: 200px;
+.container-order {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-h1 {
+.h1-order {
   font-family: "Gloria Hallelujah", cursive;
   text-align: center;
 }
 
-.flex-row {
+.flex-row-order {
   max-width: 85%;
   margin: auto;
   display: grid;

@@ -1,13 +1,11 @@
+# Toystalgic
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
-
-<!-- [![MIT License][license-shield]][license-url] -->
-
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 [![Stargazers][stars-shield]][stars-url]
 [![GitHub Watchers][github-watchers]][github-watchers-url]
-
-# Toystalgic
 
 <!-- PROJECT LOGO -->
 <br />
@@ -135,14 +133,11 @@ Aubree Zarges - aubreezarges@yahoo.com [![LinkedIn][linkedin-shield]][linkedin-u
 [issues-shield]: https://img.shields.io/github/issues/cdfoye/Toystalgic.svg?style=for-the-badge
 [issues-url]: https://github.com/cdfoye/Toystalgic/issues
 [license-shield]: https://img.shields.io/github/license/cdfoye/Toystalgic.svg?style=for-the-badge
-[license-url]: https://github.com/cdfoye/Toystalgic/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url-kelly]: https://www.linkedin.com/in/kellywalsh001/
 [linkedin-url-catherine]: https://www.linkedin.com/in/catherine-foye/
 [linkedin-url-cynthia]: https://www.linkedin.com/in/cynthia-godoy-ncidq-96951845/
-
-<!-- [linkedin-url-aubree]: https://www.linkedin.com/in/aubreewardcs/ -->
-
+[linkedin-url-aubree]: https://www.linkedin.com/in/aubree-zarges-griego-7677a597/
 [github-shield]: https://img.shields.io/badge/-Github-blueviolet.svg?style=for-the-badge&logo=Github&colorB=555
 [github-url-kelly]: https://github.com/kemwalsh
 [github-url-catherine]: https://github.com/cdfoye
