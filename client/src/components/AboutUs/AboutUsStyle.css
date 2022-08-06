@@ -39,12 +39,7 @@
     box-sizing: border-box;
   }
   
-  /* body {
-    margin: 40px;
-    font-family: 'Open Sans', 'sans-serif';
-    background-color: rgb(255, 255, 255);
-    color: #444;
-  } */
+ 
 .Aubreecontent h1, .Aubreecontent p {
     margin: 0 0 1em 0;
   }
@@ -112,3 +107,5 @@
       width: 100%;
     }
   } 
+
+  
