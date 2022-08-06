@@ -375,7 +375,7 @@ db.once("open", async () => {
       quantity: 30,
     },
     {
-      name: "Pound Pupppies",
+      name: "Pound Puppies",
       category: categories[3]._id,
       description:
         "Variety of plush stuffed dog dolls with floppy ears and droopy eyes",
@@ -393,11 +393,11 @@ db.once("open", async () => {
       quantity: 2,
     },
     {
-      name: "Back To The Future Delorian",
+      name: "Back To The Future DeLorean",
       category: categories[3]._id,
       description:
-        "Toy car modeled from the Delorian from the Back To The Future movie",
-      image: "delorian.jpg",
+        "Toy car modeled from the DeLorean from the Back To The Future movie",
+      image: "delorean.jpg",
       price: 18.99,
       quantity: 12,
     },
