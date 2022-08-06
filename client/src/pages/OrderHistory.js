@@ -7,11 +7,13 @@ import { QUERY_USER } from "../utils/queries";
 import "./OrderStyles.css";
 
 function OrderHistory() {
-  const { data } = useQuery(QUERY_USER);
+  const { data, loading } = useQuery(QUERY_USER);
   let user;
   if (data) {
     user = data.user;
-    console.log(user);
+  }
+  if (loading) {
+    return <h1>loading</h1>;
   }
   return (
     <>
@@ -37,7 +39,6 @@ function OrderHistory() {
                       <div>
                         <span>${price}</span>
                       </div>
-                      console.log("helllo")
                     </div>
                   ))}
                 </div>

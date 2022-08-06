@@ -30,6 +30,7 @@ const SinglePost = () => {
     <div
       style={{
         backgroundImage: `url(${BackgroundImg})`,
+        minHeight: "80vh",
       }}
     >
       <div className="wrap">
