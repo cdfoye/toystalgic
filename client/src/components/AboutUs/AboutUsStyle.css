@@ -1,10 +1,40 @@
+#AubreeOrangeFooter{
+  background-color: #ff6934;
+}
+#GitHubText{
+  font-family: 'Kirang Haerang', cursive;
+}
+
+#AubreePurpleSidebar{
+  background-color: purple;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+
+
+#AubreePinkHeader{
+  background-color: #F070A1;
+  font-family: 'Kirang Haerang', cursive;
+}
 
 .AboutUsDisplay {
   padding-top: 50px;
 }
 
+.card-text-Aubree {
+  color: purple;
+  font-family: 'Gloria Hallelujah', cursive;
+} 
 
-/* 
+.card-title-Aubree {
+  color: #C34271;;
+  font-family: 'Kirang Haerang', cursive;
+} 
+
+.AubreeLink {
+  color: #ff6934;
+}
+
 *, *:before, *:after {
     box-sizing: border-box;
   }
@@ -15,66 +45,70 @@
     background-color: rgb(255, 255, 255);
     color: #444;
   } */
-  
-  /* .Aubreecontent h1, .Aubreecontent p {
+.Aubreecontent h1, .Aubreecontent p {
     margin: 0 0 1em 0;
   }
-  
+   
   .Aubreewrapper {
-    max-width: 940px;
+   
     margin: 0 20px;
     display: grid;
     grid-gap: 10px;
-    width: 100%
-  } */
+    width: 100%;
+    color: purple;
+    padding-top: 100px ;
+    
+  } 
   
-  /* @media screen and (min-width: 500px) {
-  
-    /* no grid support? */
-    /* .Aubreeesidebar {
+   @media screen and (min-width: 500px) {
+   
+   /* no grid support? */
+    .Aubreeesidebar {
       float: left;
       width: 19.1489%;
-      transform: rotate(270deg);
+      
     }
-   */
-    /* .Aubreecontent {
+  
+    .Aubreecontent {
       float: right;
       width: 79.7872%;
       
-    } */ */
+    } 
   
-    /* .Aubreewrapper {
+     .Aubreewrapper {
       margin: 0;
       grid-template-columns: 1fr 3fr;
       padding-top: 50px;
       padding-bottom: 50px;
-    } */
-    
-    /* .Aubreeheader, .Aubreefooter {
+    } 
+     
+     .Aubreeheader, .Aubreefooter {
       grid-column: 1 / -1;
       width: 100%;
+      text-align: center;
+      background-color: pink;
       /* needed for the floated layout */
-      /* clear: both;
-    } */ */
+       /* clear: both; */
+    } 
   
-  /* }
+   }
   
   .Aubreewrapper > * {
     background-color: #16ffbd;
     color: #fff;
     border-radius: 5px;
     padding: 20px;
-    font-size: 150%; */
+    font-size: 150%; 
     /* needed for the floated layout*/
-    /* margin-bottom: 10px;
+   margin-bottom: 10px;
     width: 100%;
-  } */
+  } 
   
   /* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
-  /* @supports (display: grid) {
+   @supports (display: grid) {
     .Aubreewrapper > * {
       
       margin: 0;
       width: 100%;
     }
-  } */ */
+  } 
