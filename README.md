@@ -103,6 +103,12 @@ Website's Appearance:
 
 [Heroku Deployed Live Website](https://toystalgic.herokuapp.com/)
 
+<br />Swipe testing card for checking out items: <br /> <br />
+4242 4242 4242 4242 <br />
+12/34 <br />
+CVC: any three numbers (ex: 123) <br />
+Use any name and zip code
+
 ## Credits
 
 List of Contributors:
