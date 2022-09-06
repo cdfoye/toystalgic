@@ -58,11 +58,11 @@ Aubree Zarges - aubreezarges@yahoo.com </br>
 [![LinkedIn][linkedin-shield]][linkedin-url-aubree] [![GitHub][github-shield]][github-url-aubree] </br>
 
 ## Screenshots:
-![](client/public/images/Screenshot.png)
+![](client/public/images/Screenshot.PNG)
 </br>
-![](client/public/images/Screenshot2.png)
+![](client/public/images/Screenshot2.PNG)
 </br>
-![](client/public/images/Screenshot3.png)
+![](client/public/images/Screenshot3.PNG)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
