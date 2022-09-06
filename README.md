@@ -1,5 +1,3 @@
-# Toystalgic
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
@@ -7,123 +5,64 @@
 [![Stargazers][stars-shield]][stars-url]
 [![GitHub Watchers][github-watchers]][github-watchers-url]
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://cdfoye.github.io/Toystalgic/">
-  </a>
-
-<h3 align="center">Toystalgic</h3>
-
-  <p align="center">
-    <!-- TEXT -->
-    <br />
-    <a href="https://github.com/cdfoye/Toystalgic"><strong>Explore the Docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://toystalgic.herokuapp.com/">View Demo</a>
-    ·
-    <a href="https://github.com/cdfoye/Toystalgic/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/cdfoye/Toystalgic/issues">Request Feature</a>
-  </p>
-</div>
+# Toystalgic
 
 ## Description:
+Toystalgic is a **MERN Stack**(minus MongoDB) eCommerce application selling nostalgic toys. where customers can also interact with enthusiasts on a forum. This eCommerce website was created using [Express,](https://expressjs.com/) [React.js,](https://reactjs.org/) [Node.js,](https://nodejs.org/en/) [Apollo,](https://www.apollographql.com/) [GraphQL,](https://graphql.org/) [& Stripe dashboard for checkout.](https://dashboard.stripe.com/) The front-end of the application was styled using [100% CSS.](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS)
 
-GIVEN the Toystalgic homepage
-<br>
-WHERE I have options to view the listed toys and have the option to login
-<br>
-WHEN I choose login to Toystalgic
-<br>
-THEN I am shown a login interface to either login or an option to create a new profile
-<br>
-THEN I have access to the homepage and my own profile
-<br>
-WHEN I navigate to the homepage
-<br>
-THEN I am presented with a collection vintage toys
-<br>
-WHEN I navigate Order History
-<br>
-THEN I am presented with my previous orders
-<br>
-WHEN I navigate to the Forum
-<br>
-THEN I am taken to a forum to discuss vintage toys or similar topics
-<br>
-WHEN I navigate to About Me
-<br>
-THEN I am shown information on the creators of the application
+## Deployed Heroku URL: 
+[LiveURL Heroku](https://toystalgic.herokuapp.com/)
 
-## User Story
+[Link to view original group commits.](https://github.com/cdfoye/Toystalgic)
 
-AS A collector
-<br>
-I WANT to buy and sell old nostalgic toys
-<br>
-SO THAT I can grow a collection and interact with other enthusiasts
+## Stripe Usage
+Stripe card number for testing application:
+```
+Card #: 4242 4242 4242 4242 
+Exp: 12/34 
+CVC: any three numbers (ex: 123) 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+Use any name and zip code
+```
 
 ## Application Features:
+✅ The homepage is a shopping page that can organized by decade.
 
-- Ability to view and purchase vintage toys
-- Create profile to keep track of purchases
-- User can post to forum to have conversations with other toy collectors
-- View the creators of the application
+✅ When the user clicks the "Add to Cart" button a product will be added to the cart.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+✅ When the user clicks on the product image the user is taken to the single product page where the user can look at more product details and/or add an item to the cart.
 
-## Application Appearance and Functionality:
+✅ The user may login or create a new profile to checkout the items in the cart.
 
-Website's Appearance:
+✅ Once the user has checked out the user may view the order history.
 
-<!-- Add link to gif -->
+✅ Anyone can view the forum but a user must be logged in to contribute comments to the forum.
 
-![Appearance](client/public/images/readmeScreenshot.png)
-
-### Built With
-
-- [HTML](hhttps://www.w3schools.com/html/)
-- [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS)
-- [Javascript](https://www.javascript.com)
-- [EXPRESS](https://expressjs.com/)
-- [REACT](https://reactjs.org/)
-- [NODE.JS](https://nodejs.org/en/)
-- [GRAPHQL](https://graphql.org/)
-- [APOLLO](https://www.apollographql.com/)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Project Link
-
-[GitHub Repository](https://github.com/cdfoye/Toystalgic)
-
-[Heroku Deployed Live Website](https://toystalgic.herokuapp.com/)
-
-<br />Swipe testing card for checking out items: <br /> <br />
-4242 4242 4242 4242 <br />
-12/34 <br />
-CVC: any three numbers (ex: 123) <br />
-Use any name and zip code
+✅ The about us page shows the creators of the application.
 
 ## Credits
-
 List of Contributors:
-
 1. Kelly Walsh
 2. Catherine Foye
 3. Cynthia Godoy
 4. Aubree Zarges
 
 ## Contact Info
+Kelly Walsh - kellywalsh827@gmail.com 
+[![LinkedIn][linkedin-shield]][linkedin-url-kelly] [![GitHub][github-shield]][github-url-kelly] </br>
+Catherine Foye - cdfoye@gmail.com 
+[![LinkedIn][linkedin-shield]][linkedin-url-catherine] [![GitHub][github-shield]][github-url-catherine] </br>
+Cynthia Godoy - cynthia@ck-interiors.com 
+[![LinkedIn][linkedin-shield]][linkedin-url-cynthia] [![GitHub][github-shield]][github-url-cynthia] </br>
+Aubree Zarges - aubreezarges@yahoo.com 
+[![LinkedIn][linkedin-shield]][linkedin-url-aubree] [![GitHub][github-shield]][github-url-aubree] </br>
 
-Kelly Walsh - kellywalsh827@gmail.com [![LinkedIn][linkedin-shield]][linkedin-url-kelly] [![GitHub][github-shield]][github-url-kelly] </br>
-Catherine Foye - cdfoye@gmail.com [![LinkedIn][linkedin-shield]][linkedin-url-catherine] [![GitHub][github-shield]][github-url-catherine] </br>
-Cynthia Godoy - cynthia@ck-interiors.com [![LinkedIn][linkedin-shield]][linkedin-url-cynthia] [![GitHub][github-shield]][github-url-cynthia] </br>
-Aubree Zarges - aubreezarges@yahoo.com [![LinkedIn][linkedin-shield]][linkedin-url-aubree] [![GitHub][github-shield]][github-url-aubree] </br>
+## Screenshots:
+![](client/public/images/Screenshot.png)
+</br>
+![](client/public/images/Screenshot2.png)
+</br>
+![](client/public/images/Screenshot3.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
