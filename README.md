@@ -8,7 +8,7 @@
 # Toystalgic
 
 ## Description:
-Toystalgic is a **MERN Stack**(minus MongoDB) eCommerce application selling nostalgic toys. where customers can also interact with enthusiasts on a forum. This eCommerce website was created using [Express,](https://expressjs.com/) [React.js,](https://reactjs.org/) [Node.js,](https://nodejs.org/en/) [Apollo,](https://www.apollographql.com/) [GraphQL,](https://graphql.org/) [& Stripe dashboard for checkout.](https://dashboard.stripe.com/) The front-end of the application was styled using [100% CSS.](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS)
+Toystalgic is a **MERN Stack**(minus MongoDB) eCommerce application selling nostalgic toys in which customers can also interact with enthusiasts on a forum. This eCommerce website was created using [Express,](https://expressjs.com/) [React.js,](https://reactjs.org/) [Node.js,](https://nodejs.org/en/) [Apollo,](https://www.apollographql.com/) [GraphQL,](https://graphql.org/) [& Stripe dashboard for checkout.](https://dashboard.stripe.com/) The front-end of the application was styled using [100% CSS.](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS)
 
 ## Deployed Heroku URL: 
 [LiveURL Heroku](https://toystalgic.herokuapp.com/)
@@ -48,13 +48,13 @@ List of Contributors:
 4. Aubree Zarges
 
 ## Contact Info
-Kelly Walsh - kellywalsh827@gmail.com 
+Kelly Walsh - kellywalsh827@gmail.com </br>
 [![LinkedIn][linkedin-shield]][linkedin-url-kelly] [![GitHub][github-shield]][github-url-kelly] </br>
-Catherine Foye - cdfoye@gmail.com 
+Catherine Foye - cdfoye@gmail.com </br>
 [![LinkedIn][linkedin-shield]][linkedin-url-catherine] [![GitHub][github-shield]][github-url-catherine] </br>
-Cynthia Godoy - cynthia@ck-interiors.com 
+Cynthia Godoy - cynthia@ck-interiors.com </br>
 [![LinkedIn][linkedin-shield]][linkedin-url-cynthia] [![GitHub][github-shield]][github-url-cynthia] </br>
-Aubree Zarges - aubreezarges@yahoo.com 
+Aubree Zarges - aubreezarges@yahoo.com </br>
 [![LinkedIn][linkedin-shield]][linkedin-url-aubree] [![GitHub][github-shield]][github-url-aubree] </br>
 
 ## Screenshots:
