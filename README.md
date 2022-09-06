@@ -59,9 +59,9 @@ Aubree Zarges - aubreezarges@yahoo.com </br>
 
 ## Screenshots:
 ![](client/public/images/Screenshot.PNG)
-</br>
+</br></br>
 ![](client/public/images/Screenshot2.PNG)
-</br>
+</br></br>
 ![](client/public/images/Screenshot3.PNG)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
