@@ -8,7 +8,7 @@
 # Toystalgic
 
 ## Description:
-Toystalgic is a **MERN Stack**(minus MongoDB) eCommerce application selling nostalgic toys in which customers can also interact with enthusiasts on a forum. This eCommerce website was created using [Express,](https://expressjs.com/) [React.js,](https://reactjs.org/) [Node.js,](https://nodejs.org/en/) [Apollo,](https://www.apollographql.com/) [GraphQL,](https://graphql.org/) [& Stripe dashboard for checkout.](https://dashboard.stripe.com/) The front-end of the application was styled using [100% CSS.](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS)
+Toystalgic is a **MERN Stack** eCommerce application selling nostalgic toys in which customers can also interact with enthusiasts on a forum. This eCommerce website was created using [Express,](https://expressjs.com/) [React.js,](https://reactjs.org/) [Node.js,](https://nodejs.org/en/) [Apollo,](https://www.apollographql.com/) [GraphQL,](https://graphql.org/) [& Stripe dashboard for checkout.](https://dashboard.stripe.com/) The front-end of the application was styled using [100% CSS.](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS)
 
 ## Deployed Heroku URL: 
 [LiveURL Heroku](https://toystalgic.herokuapp.com/)
