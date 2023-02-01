@@ -40,6 +40,10 @@ Use any name and zip code
 
 ✅ The about us page shows the creators of the application.
 
+## Install & Usage
+`npm i` @ all json files
+`npm run develop` @ main json file
+
 ## Credits
 List of Contributors:
 1. Kelly Walsh
