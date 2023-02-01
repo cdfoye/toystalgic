@@ -2,13 +2,10 @@ import "./AboutUsStyle.css";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
-// import 'swiper/components/navigation/navigation.min.css';
 
-import {Pagination, Navigation} from "swiper";
 import AboutUsCard from "./AboutUsCard";
 
-
-
+import { EffectFade, Navigation, Pagination } from "swiper";
 
 const data = [
   {
@@ -48,35 +45,29 @@ export default function Display() {
       <aside className="Aubreesidebar" id="AubreePurpleSidebar">
         We are an all women-based group of full stack developers who just graduated from Denver University's
         Coding Bootcamp. Together we wanted to make an app that brought joy with
-        equal doses whimsy and nostalgia. So, enjoy shopping for your favorite
+        equal doses whimsy and nostalgia.
+        
+        So, enjoy shopping for your favorite
         vintage toys and have fun!{" "}
       </aside>
       <article className="Aubreecontent">
         <div className="AboutUsDisplay">
           {" "}
           <Swiper
-            style={{width: "50rem",}}
+            // style={{width: "54rem",}}
+            effect={"fade"}
             slidesPerView={3}
-            spaceBetween={100}
-            slidesPerGroup={3}
+            spaceBetween={125}
+            slidesPerGroup={1}
+            loopedSlides={4}
             loop={true}
             loopFillGroupWithBlank={true}
             pagination={{clickable: true,}}
             navigation={true}
-            modules={[Pagination, Navigation]}
-
-          // spaceBetween={100}
-          // slidesPerView={3}
-          // centeredSlides={true}
-          // centeredSlidesBounds={true}
-          // 
-          // loopedSlides={4}
-          // loop={true}
-          // onSlideChange={() => console.log('slide change')}
-          // onSwiper={(swiper) => console.log(swiper)}
-          // navigation={true}
-          // modules={[Navigation]}
-          className="mySwiper"
+            modules={[EffectFade, Pagination, Navigation]}
+            breakpoints={{300: {width: 300, slidesPerView: 1, spaceBetween: 10, centeredSlides: true,},
+                        950: {width: 950, slidesPerView: 2, spaceBetween: 10, centeredSlides: true,},}}
+            className="mySwiper"
           >
             {data.map((person) => (
               <SwiperSlide>
