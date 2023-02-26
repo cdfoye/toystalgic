@@ -1,18 +1,19 @@
 import "./AboutUsStyle.css";
+import AboutUsCard from "./AboutUsCard";
 import React from "react";
+
+import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
-
-import AboutUsCard from "./AboutUsCard";
-
-import { EffectFade, Navigation, Pagination } from "swiper";
+import 'swiper/modules/pagination/pagination.min.css';
+import 'swiper/modules/navigation/navigation.min.css';
 
 const data = [
   {
-    name: "Aubree",
+    name: "Catherine",
     description:
-      "Hello there! I have been a nurse for 9 years and am ready to start a new career with some fun challenges.",
-    GitHub: "https://github.com/AubreeZ-G",
+      "Service Engineer that enjoys the challenge of programming. Open to exploring the potential of changing careers.",
+    GitHub: "https://github.com/cdfoye",
   },
 
   {
@@ -23,10 +24,10 @@ const data = [
   },
 
   {
-    name: "Catherine",
+    name: "Aubree",
     description:
-      "Service Engineer that enjoys the challenge of programming. Open to exploring the potential of changing careers.",
-    GitHub: "https://github.com/cdfoye",
+      "Hello there! I have been a nurse for 9 years and am ready to start a new career with some fun challenges.",
+    GitHub: "https://github.com/AubreeZ-G",
   },
 
   {
@@ -35,6 +36,8 @@ const data = [
       "Colorado Springs based developer ready to start a new career and bring a fresh perspective to programming.",
     GitHub: "https://github.com/kemwalsh",
   },
+
+
 ];
 export default function Display() {
   return (
@@ -42,31 +45,38 @@ export default function Display() {
       <header className="Aubreeheader" id="AubreePinkHeader">
         About Us
       </header>
+      <div className="columns" id="grid">
       <aside className="Aubreesidebar" id="AubreePurpleSidebar">
-        We are an all women-based group of full stack developers who just graduated from Denver University's
-        Coding Bootcamp. Together we wanted to make an app that brought joy with
-        equal doses whimsy and nostalgia.
+        <p>We are an all women-based group of full stack developers & together we wanted to make an app that brought joy with
+        equal doses whimsy and nostalgia.</p>
         
-        So, enjoy shopping for your favorite
-        vintage toys and have fun!{" "}
+        <p>So, enjoy shopping for your favorite
+        vintage toys and have fun!{" "} </p>
       </aside>
-      <article className="Aubreecontent">
+      <article className="Aubreecontent" id="AubreeGreenContent">
         <div className="AboutUsDisplay">
           {" "}
           <Swiper
-            // style={{width: "54rem",}}
-            effect={"fade"}
+            modules={[ Navigation, Pagination ]}
             slidesPerView={3}
-            spaceBetween={125}
-            slidesPerGroup={1}
-            loopedSlides={4}
+            spaceBetween={10}
+            // slidesPerGroup={3}
+            // loopedSlides={4}
             loop={true}
+            centeredSlides={true}
+
             loopFillGroupWithBlank={true}
-            pagination={{clickable: true,}}
             navigation={true}
-            modules={[EffectFade, Pagination, Navigation]}
-            breakpoints={{300: {width: 300, slidesPerView: 1, spaceBetween: 10, centeredSlides: true,},
-                        950: {width: 950, slidesPerView: 2, spaceBetween: 10, centeredSlides: true,},}}
+            pagination={{ clickable: true }}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+            breakpoints={{200: {slidesPerView: 1, spaceBetween: 20, centeredSlides: false,},
+                          300: {slidesPerView: 1, spaceBetween: 10, centeredSlides: false,},
+                          595: {slidesPerView: 3, spaceBetween: 10, centeredSlides: false,},
+                          768: {slidesPerView: 3, spaceBetween: 10, centeredSlides: false,},
+                          1200: {slidesPerView: 3, spaceBetween: 10, centeredSlides: false,},
+                        }}
+
             className="mySwiper"
           >
             {data.map((person) => (
@@ -82,6 +92,7 @@ export default function Display() {
           </Swiper>
         </div>
       </article>
+      </div>
       <footer className="Aubreefooter" id="AubreeOrangeFooter">
         {" "}
       </footer>
