@@ -5,7 +5,7 @@
 .Aubreewrapper > * {
   color: #fff;
   font-size: 150%; 
-  width: 100%;
+  /* width: 100%; */
   margin: 0px;
 }
 
@@ -33,11 +33,12 @@
 /* HEADER & FOOTERS---------------------------------------------- */
 
 /* TWO COLUMNS SIDE BY SIDE------------------------------------ */
-#grid {
-  display: grid;
+#grid {  
+  display: grid; 
   width: 100%;
-  grid-template-columns: 1fr 3fr;
-}
+  grid-template-columns: auto;
+  /* grid-template-columns: 1fr 3fr;  */
+}  
 
 #AubreePurpleSidebar, #AubreePurpleSidebar p{
   background-color: purple;
@@ -50,7 +51,7 @@
 
 #AubreeGreenContent {
   background-color: #16ffbd;
-  width: 100%;
+  /* width: 100%; */
 }
 /* TWO COLUMNS SIDE BY SIDE------------------------------------ */
 
@@ -90,8 +91,10 @@
   padding-top: 60px;
   padding-bottom: 60px;
   margin-bottom: 30px;
-  width: 58rem;
-  margin-left: 4rem;
+  /* width: 58rem; */
+  /* margin-left: 4rem; */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .swiper-pagination-bullet-active {
@@ -101,346 +104,44 @@
 .swiper-button-next, .swiper-button-prev {
   color: #ff6934 !important;
 }
-
-
-
-
-
-
-/* 
-.slide {
-  transform: scale(.8);
-  transition: transform 300ms;
-  opacity: 0.5;
-  padding: 10px;
-}
-
-.activeSlide {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.arrow {
-  position: absolute;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.arrow svg {
-  transition: color 300ms;
-}
-
-.arrow svg:hover {
-  color: #45c0be;  
-}
-
-.next {
-  right: 0%;
-  top: 50%;
-}
-
-.prev {
-  left: 0%;
-  top: 50%;
-} */
 /* CAROUSEL ITEMS------------------------------------------------- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .Aubreewrapper > * {
-  color: #fff;
-  padding: 20px;
-  grid-template-columns: 1fr 3fr;
-  font-size: 150%; 
-  max-width: 100%;
-  margin: 0px;
-  display: grid;
-  grid-gap: 0px; */
-  /* width: 100%; */
-  /* padding-top: 100px;
-  padding-bottom: 0px;
-} 
-
-.Aubreeesidebar {
-  float: left;
-  width: 19.1489%;
-}
-.Aubreecontent {
-  float: right;
-  width: 79.7872%;
-}  */
-
-
-/* .Aubreewrapper {
-  margin: 0;
-  
-  padding-top: 60px;
-  padding-bottom: 0px;
-}  */
-
-
-
-/* *, *:before, *:after {
-  box-sizing: border-box;
-}
-
-#AubreePinkHeader{
-  background-color: #F070A1;
-  font-family: 'Kirang Haerang', cursive;
-  font-size: 36px;
-  padding: 0px; */
-  /* max-width: 100%; */
-/* } */
-/*  */
-/* #AubreePurpleSidebar{ */
-  /* background-color: purple; */
-  /* font-family: 'Gloria Hallelujah', cursive; */
-  /* margin-top: 0px; */
-  /* max-width: 100%; */
-/* } */
-/*  */
-
-
-
-
-/* #AubreeOrangeFooter{ */
-  /* background-color: #ff6934; */
-  /* margin-bottom: 0px !important; */
-  /* padding-bottom: 100px; */
-  /* max-width: 100%; */
-/* } */
-/*  */
-/* #GitHubText{ */
-  /* font-family: 'Kirang Haerang', cursive; */
-/* } */
-/*  */
-/* .card:hover { */
-  /* cursor: grab; */
-/* } */
-/*  */
-/* .card-text-Aubree { */
-  /* color: purple; */
-  /* font-family: 'Gloria Hallelujah', cursive; */
-/* }  */
-/*  */
-/* .card-title-Aubree { */
-  /* color: #C34271;; */
-  /* font-family: 'Kirang Haerang', cursive; */
-/* }  */
-/*  */
-/* .AubreeLink { */
-  /* color: #ff6934; */
-/* } */
-/*  */
-/*  */
-/* .Aubreecontent h1, .Aubreecontent p { */
-    /* margin: 0 0 1em 0; */
-    /* margin-top: 0px; */
-  /* } */
-/*  */
-/*  */
-/* .Aubreeesidebar { */
-  /* float: left; */
-  /* width: 19.1489%; */
-/* } */
-/*  */
-/* .Aubreecontent { */
-  /* background-color: #16ffbd; */
-  /* float: right; */
-  /* width: 79.7872%; */
-/* }  */
-/*  */
-/* .Aubreewrapper {
-  margin: 0;
-  grid-template-columns: 1fr 3fr;
-  padding-top: 60px;
-  padding-bottom: 0px;
-}  */
-
-/* .Aubreeheader, .Aubreefooter { */
-  /* grid-column: 1 / -1; */
-  /* max-width: 100%; */
-  /* text-align: center; */
-  /* background-color: pink; */
-/* }  */
-
-
-/* MEDIA SCREENS-------------------------------------------------------------- */
-/* @media only screen and (min-width: 1200px) {
-  .Aubreeesidebar {
-    float: left;
-    width: 19.1489%;
-  }
-  .Aubreecontent {
-    float: right;
-    width: 79.7872%;
-  } 
-  .Aubreewrapper {
-    margin: 0;
-    grid-template-columns: 1fr 3fr;
-    padding-top: 60px;
-    padding-bottom: 0px;
-  } 
-  .Aubreeheader, .Aubreefooter {
-    grid-column: 1 / -1;
-    max-width: 100%;
-    text-align: center;
-    background-color: pink;
-  } 
+/* MEDIA SCREENS FOR SWIPER WINDOW WIDTH (max-width 600px wide or less/ min-width 600px or more)-------------------------- */
+@media screen and (min-width: 300px){
   .AboutUsDisplay {
-    padding-top: 15px;
-    width: 58rem;
-    margin-left: 6rem;
+  width: 300px;
   }
-} 
+}
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .Aubreeesidebar {
-    float: left;
-    width: 50%;
-  }
-  .Aubreecontent {
-    float: right;
-    width: 50%;
-  } 
-  .Aubreewrapper {
-    margin: 0;
+@media (min-width: 768px) {
+  #grid {
     grid-template-columns: 1fr 1fr;
-    padding-top: 60px;
-    padding-bottom: 0px;
-  } 
-  .Aubreeheader, .Aubreefooter {
-    grid-column: 1 / -1;
-    max-width: 100%;
-    text-align: center;
-    background-color: pink;
-  } 
-  .AboutUsDisplay {
-    padding-top: 15px;
-    width: 40rem;
-    margin-left: 2rem;
-  }
-  .Aubreewrapper {
-    padding-top: 52px;
-  }
-  #AubreePinkHeader.Aubreeheader{
-    text-align: center;
-  } 
-}
-
-@media only screen and (max-width: 768px) {
-  .Aubreewrapper {
-    padding-top: 52px;
-  }
-  #AubreePinkHeader.Aubreeheader{
-    text-align: center;
   }
   .AboutUsDisplay {
-    padding-top: 5px;
-    width: 40rem;
-    margin-left: 1.5rem;
-  }
-} 
-
-@media only screen and (max-width: 590px) {
-  .Aubreewrapper {
-    padding-top: 52px;
-  }
-  #AubreePinkHeader.Aubreeheader{
-    text-align: center;
-  }
-  .AboutUsDisplay {
-    padding-top: 5px;
-    width: 26rem;
-    margin-left: 5rem;
+  width: 360px;
   }
 }
 
-@media only screen and (max-width: 420px) {
-  .Aubreewrapper {
-    padding-top: 52px;
-  }
-  #AubreePinkHeader.Aubreeheader{
-    text-align: center;
+@media (min-width: 968px) {
+  #grid {
+    grid-template-columns: 1fr 2fr;
   }
   .AboutUsDisplay {
-    padding-top: 5px;
-    width: 18rem;
-    margin-left: 2.5rem;
+  width: 600px;
   }
 }
 
-@media only screen and (max-width: 280px) {
-  .Aubreewrapper {
-    padding-top: 52px;
-  }
-  #AubreePinkHeader.Aubreeheader{
-    text-align: center;
+@media (min-width: 1200px) {
+  #grid {
+    grid-template-columns: 1fr 3fr;
   }
   .AboutUsDisplay {
-    padding-top: 5px;
-    width: 17.5rem;
-   margin-left: 0rem;
+  width: 928px;
   }
 }
- */
-  
-/* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
-/* @supports (display: grid) {
-  .Aubreewrapper > * {
-    margin: 0;
-    width: 100%;
-  }
-}  */
 
 
-
-/* AUBREE'S ORIGINAL CSS------------------------------------------------------- */
+/* AUBREE'S ORIGINAL CSS------------------------------------------ */
 /* #AubreeOrangeFooter{
   background-color: #ff6934;
 }
@@ -452,8 +153,6 @@
   background-color: purple;
   font-family: 'Gloria Hallelujah', cursive;
 }
-
-
 
 #AubreePinkHeader{
   background-color: #F070A1;
@@ -482,13 +181,10 @@
     box-sizing: border-box;
   }
   
- 
 .Aubreecontent h1, .Aubreecontent p {
     margin: 0 0 1em 0;
   }
-   
   .Aubreewrapper {
-   
     margin: 0 20px;
     display: grid;
     grid-gap: 10px;
@@ -497,9 +193,9 @@
     padding-top: 100px ;
     
   } 
-  
-   @media screen and (min-width: 500px) {
-   
+
+    @media screen and (min-width: 500px) {
+
     .Aubreeesidebar {
       float: left;
       width: 19.1489%;
@@ -512,21 +208,20 @@
       
     } 
   
-     .Aubreewrapper {
+    .Aubreewrapper {
       margin: 0;
       grid-template-columns: 1fr 3fr;
       padding-top: 50px;
       padding-bottom: 50px;
     } 
-     
-     .Aubreeheader, .Aubreefooter {
+
+    .Aubreeheader, .Aubreefooter {
       grid-column: 1 / -1;
       width: 100%;
       text-align: center;
       background-color: pink;
     } 
-  
-   }
+}
   
   .Aubreewrapper > * {
     background-color: #16ffbd;
@@ -534,14 +229,12 @@
     border-radius: 5px;
     padding: 20px;
     font-size: 150%; 
-
-   margin-bottom: 10px;
+    margin-bottom: 10px;
     width: 100%;
   } 
   
-   @supports (display: grid) {
+@supports (display: grid) {
     .Aubreewrapper > * {
-      
       margin: 0;
       width: 100%;
     }

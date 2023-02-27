@@ -63,17 +63,16 @@ export default function Display() {
             // slidesPerGroup={3}
             // loopedSlides={4}
             loop={true}
-            centeredSlides={true}
-
             loopFillGroupWithBlank={true}
             navigation={true}
             pagination={{ clickable: true }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
-            breakpoints={{200: {slidesPerView: 1, spaceBetween: 20, centeredSlides: false,},
-                          300: {slidesPerView: 1, spaceBetween: 10, centeredSlides: false,},
-                          595: {slidesPerView: 3, spaceBetween: 10, centeredSlides: false,},
-                          768: {slidesPerView: 3, spaceBetween: 10, centeredSlides: false,},
+            //BREAKPOINTS GREATER THAN OR EQUAL TO-----------------------
+            breakpoints={{
+                          300: {slidesPerView: 1, spaceBetween: 10, centeredSlides: true,},
+                          768: {slidesPerView: 1, spaceBetween: 10, centeredSlides: true,},
+                          968: {slidesPerView: 2, spaceBetween: 5, centeredSlides: false,},
                           1200: {slidesPerView: 3, spaceBetween: 10, centeredSlides: false,},
                         }}
 
