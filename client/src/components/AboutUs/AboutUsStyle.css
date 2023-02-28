@@ -140,6 +140,38 @@
   }
 }
 
+/* "PAGE_TRANSITION" with CSS--------------------------------------- */
+.Aubreesidebar {
+  animation: sidebarslideIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes sidebarslideIn {
+      0% {
+          transform: translateX(-100%);
+      }
+      100% {
+          transform: translateX(0%);
+      }
+  }
+  
+  .Aubreecontent {
+    animation: contentslideIn 2s ease-in-out forwards;
+    }
+    
+    @keyframes contentslideIn {
+        0% {
+            transform: translateX(200%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+  .dark-pink-out {
+      background-color: #C34271;
+  }
+/* "PAGE_TRANSITION" with CSS--------------------------------------- */
+
 
 /* AUBREE'S ORIGINAL CSS------------------------------------------ */
 /* #AubreeOrangeFooter{
@@ -239,3 +271,4 @@
       width: 100%;
     }
   }  */
+/* AUBREE'S ORIGINAL CSS------------------------------------------ */

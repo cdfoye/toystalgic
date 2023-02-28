@@ -41,6 +41,7 @@ const data = [
 ];
 export default function Display() {
   return (
+    <div className="dark-pink-out">
     <div className="Aubreewrapper">
       <header className="Aubreeheader" id="AubreePinkHeader">
         About Us
@@ -60,8 +61,6 @@ export default function Display() {
             modules={[ Navigation, Pagination ]}
             slidesPerView={3}
             spaceBetween={10}
-            // slidesPerGroup={3}
-            // loopedSlides={4}
             loop={true}
             loopFillGroupWithBlank={true}
             navigation={true}
@@ -95,6 +94,7 @@ export default function Display() {
       <footer className="Aubreefooter" id="AubreeOrangeFooter">
         {" "}
       </footer>
+    </div>
     </div>
   );
 }

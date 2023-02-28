@@ -19,3 +19,22 @@
     width: 100%;
   }
 }
+
+/* "PAGE_TRANSITION" with CSS--------------------------------------- */
+.forum-background {
+    animation: backgroundslideIn 2s ease-in-out forwards;
+    }
+
+    @keyframes backgroundslideIn {
+      0% {
+          transform: translateX(-100%);
+      }
+      100% {
+          transform: translateX(0%);
+      }
+  }
+
+  .purple-out {
+      background-color: purple;
+  }
+  /* "PAGE_TRANSITION" with CSS--------------------------------------- */

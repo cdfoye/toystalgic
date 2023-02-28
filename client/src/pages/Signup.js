@@ -34,6 +34,7 @@ function Signup(props) {
   };
 
   return (
+    <div className="orange-out">
     <div className="signup background">
       <img className="img" src={BackgroundImg} alt="teddy bear" />
       <div className="signup-heading">
@@ -94,7 +95,7 @@ function Signup(props) {
           </div>
         </form>
       </div>
-    </div>
+    </div></div>
   );
 }
 

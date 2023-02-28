@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { LOGIN } from "../utils/mutations";
 import Auth from "../utils/auth";
 import BackgroundImg from "../assets/pushups.jpg";
+// import { motion } from "framer-motion";
 
 import "./LoginStyles.css";
 
@@ -33,6 +34,7 @@ function Login(props) {
   };
 
   return (
+    <div className="green-out">
     <div className="login background">
       <img className="img" src={BackgroundImg} alt="robot doing pushups" />
       <div className="login-heading">
@@ -79,7 +81,7 @@ function Login(props) {
           </div>
         </form>
       </div>
-    </div>
+    </div></div>
   );
 }
 

@@ -50,3 +50,23 @@ h3 {
         margin-left: 10%;
     }
 }
+
+/* "PAGE_TRANSITION" with CSS--------------------------------------- */
+.product-heading {
+    animation: productslideIn 1.5s ease-in-out forwards;
+    }
+
+    @keyframes productslideIn {
+        0% {
+            transform: translateX(200%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+.white-out {
+    background-color: white;
+}
+    
+/* "PAGE_TRANSITION" with CSS--------------------------------------- */
