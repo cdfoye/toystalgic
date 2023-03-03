@@ -44,6 +44,24 @@ Use any name and zip code
 `npm i` @ all json files
 `npm run develop` @ main json file
 
+## Push to Heroku (Commands in Bash)
+To create new Heroku App
+```
+heroku create (optional app name)
+```
+To add revisions to your Heroku App
+```
+git add .
+git commit -m "heroku commit"
+heroku git:remote -a YOUR_APP_NAME
+git push heroku main
+```
+If you are directed to the wrong Heroku App
+```
+git remote rm heroku
+heroku git:remote -a YOUR_APP_NAME
+```
+
 ## Credits
 List of Contributors:
 1. Kelly Walsh
