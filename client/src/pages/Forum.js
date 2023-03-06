@@ -14,20 +14,23 @@ const Forum = () => {
   const posts = data?.posts || [];
 
   return (
-    <div
+    <div className="purple-out">
+
+    <div className="forum-background"
       style={{
         backgroundImage: `url(${BackgroundImg})`,
         backgroundRepeat: "repeat-x",
         backgroundSize: "cover",
       }}
     >
+      <div className="blogContent">
       <div className="ForumRow">
         <PostForm />
       </div>
       <div className="ForumRow">
         {loading ? <div>Loading...</div> : <PostList posts={posts} />}
-      </div>
-    </div>
+      </div></div>
+    </div></div>
   );
 };
 

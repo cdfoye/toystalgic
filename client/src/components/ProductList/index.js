@@ -45,6 +45,7 @@ function ProductList() {
   }
 
   return (
+    <div className="white-out">
     <div className="product-heading">
         <h2>Our Products:</h2>
           {state.products.length ? (
@@ -64,7 +65,7 @@ function ProductList() {
               <h3>Please add products</h3>
               )}
               {loading ? <img src={spinner} alt="loading" /> : null}
-        </div>
+        </div></div>
   );
 }
 

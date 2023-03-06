@@ -1,4 +1,180 @@
-#AubreeOrangeFooter{
+* *, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.Aubreewrapper > * {
+  color: #fff;
+  font-size: 150%; 
+  /* width: 100%; */
+  margin: 0px;
+}
+
+/* HEADER & FOOTERS---------------------------------------------- */
+.Aubreeheader, .Aubreefooter {
+  width: 100%;
+  text-align: center;
+} 
+
+#AubreePinkHeader {
+  background-color: #F070A1;
+  font-family: 'Kirang Haerang', cursive;
+  color: white;
+  font-size: 36px;
+  padding-top: 60px;
+  max-width: 100%;
+}
+
+#AubreeOrangeFooter{ 
+  background-color: #ff6934; 
+  margin-bottom: 0px !important; 
+  padding-bottom: 100px; 
+  max-width: 100%; 
+} 
+/* HEADER & FOOTERS---------------------------------------------- */
+
+/* TWO COLUMNS SIDE BY SIDE------------------------------------ */
+#grid {  
+  display: grid; 
+  width: 100%;
+  grid-template-columns: auto;
+  /* grid-template-columns: 1fr 3fr;  */
+}  
+
+#AubreePurpleSidebar, #AubreePurpleSidebar p{
+  background-color: purple;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: white;
+  font-size: 24px;
+  padding: 20px;
+  width: 100%; 
+}
+
+#AubreeGreenContent {
+  background-color: #16ffbd;
+  /* width: 100%; */
+}
+/* TWO COLUMNS SIDE BY SIDE------------------------------------ */
+
+/* CARD STYLING--------------------------------------------------- */
+#GitHubText{
+  font-family: 'Kirang Haerang', cursive; 
+} 
+
+.card:hover { 
+  cursor: grab;
+}
+
+.card-text-Aubree { 
+  color: purple; 
+  font-family: 'Gloria Hallelujah', cursive; 
+}
+
+.card-title-Aubree { 
+  color: #C34271;
+  font-family: 'Kirang Haerang', cursive;
+} 
+
+.AubreeLink {
+  color: #ff6934;
+}
+
+.pan {
+  margin-top: 10px;
+  z-index: 50;
+  margin-left: 55px;
+  
+}
+/* CARD STYLING--------------------------------------------------- */
+
+/* CAROUSEL ITEMS------------------------------------------------- */
+.AboutUsDisplay {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+  /* width: 58rem; */
+  /* margin-left: 4rem; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff6934 !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #ff6934 !important;
+}
+/* CAROUSEL ITEMS------------------------------------------------- */
+
+/* MEDIA SCREENS FOR SWIPER WINDOW WIDTH (max-width 600px wide or less/ min-width 600px or more)-------------------------- */
+@media screen and (min-width: 300px){
+  .AboutUsDisplay {
+  width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  #grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .AboutUsDisplay {
+  width: 360px;
+  }
+}
+
+@media (min-width: 968px) {
+  #grid {
+    grid-template-columns: 1fr 2fr;
+  }
+  .AboutUsDisplay {
+  width: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #grid {
+    grid-template-columns: 1fr 3fr;
+  }
+  .AboutUsDisplay {
+  width: 928px;
+  }
+}
+
+/* "PAGE_TRANSITION" with CSS--------------------------------------- */
+.Aubreesidebar {
+  animation: sidebarslideIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes sidebarslideIn {
+      0% {
+          transform: translateX(-100%);
+      }
+      100% {
+          transform: translateX(0%);
+      }
+  }
+  
+  .Aubreecontent {
+    animation: contentslideIn 2s ease-in-out forwards;
+    }
+    
+    @keyframes contentslideIn {
+        0% {
+            transform: translateX(200%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+  .dark-pink-out {
+      background-color: #C34271;
+  }
+/* "PAGE_TRANSITION" with CSS--------------------------------------- */
+
+
+/* AUBREE'S ORIGINAL CSS------------------------------------------ */
+/* #AubreeOrangeFooter{
   background-color: #ff6934;
 }
 #GitHubText{
@@ -9,8 +185,6 @@
   background-color: purple;
   font-family: 'Gloria Hallelujah', cursive;
 }
-
-
 
 #AubreePinkHeader{
   background-color: #F070A1;
@@ -39,13 +213,10 @@
     box-sizing: border-box;
   }
   
- 
 .Aubreecontent h1, .Aubreecontent p {
     margin: 0 0 1em 0;
   }
-   
   .Aubreewrapper {
-   
     margin: 0 20px;
     display: grid;
     grid-gap: 10px;
@@ -54,10 +225,9 @@
     padding-top: 100px ;
     
   } 
-  
-   @media screen and (min-width: 500px) {
-   
-   /* no grid support? */
+
+    @media screen and (min-width: 500px) {
+
     .Aubreeesidebar {
       float: left;
       width: 19.1489%;
@@ -70,23 +240,20 @@
       
     } 
   
-     .Aubreewrapper {
+    .Aubreewrapper {
       margin: 0;
       grid-template-columns: 1fr 3fr;
       padding-top: 50px;
       padding-bottom: 50px;
     } 
-     
-     .Aubreeheader, .Aubreefooter {
+
+    .Aubreeheader, .Aubreefooter {
       grid-column: 1 / -1;
       width: 100%;
       text-align: center;
       background-color: pink;
-      /* needed for the floated layout */
-       /* clear: both; */
     } 
-  
-   }
+}
   
   .Aubreewrapper > * {
     background-color: #16ffbd;
@@ -94,18 +261,14 @@
     border-radius: 5px;
     padding: 20px;
     font-size: 150%; 
-    /* needed for the floated layout*/
-   margin-bottom: 10px;
+    margin-bottom: 10px;
     width: 100%;
   } 
   
-  /* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
-   @supports (display: grid) {
+@supports (display: grid) {
     .Aubreewrapper > * {
-      
       margin: 0;
       width: 100%;
     }
-  } 
-
-  
+  }  */
+/* AUBREE'S ORIGINAL CSS------------------------------------------ */

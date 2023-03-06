@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import {
   ApolloClient,
   InMemoryCache,
@@ -7,10 +7,6 @@ import {
   createHttpLink,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
-
-// import "swiper/css";
-// import "swiper/css/navigation";
-
 
 import Home from "./pages/Home";
 import Detail from "./pages/Detail";
@@ -53,7 +49,7 @@ function App() {
         <div>
           <StoreProvider>
             <Nav />
-            <Routes>
+              <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />

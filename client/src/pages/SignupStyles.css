@@ -131,3 +131,22 @@
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
+
+/* "PAGE_TRANSITION" with CSS--------------------------------------- */
+.signup {
+    animation: signupslideIn 1s ease-in-out forwards;
+    }
+    
+    @keyframes signupslideIn {
+        0% {
+            transform: translateX(200%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+.orange-out {
+    background-color: #ff6934;
+}
+/* "PAGE_TRANSITION" with CSS--------------------------------------- */

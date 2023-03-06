@@ -1,63 +1,80 @@
 import "./AboutUsStyle.css";
+import AboutUsCard from "./AboutUsCard";
 import React from "react";
+
+import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
-// import 'swiper/components/navigation/navigation.min.css';
-
-import { Navigation } from "swiper";
-import AboutUsCard from "./AboutUsCard";
+import 'swiper/modules/pagination/pagination.min.css';
+import 'swiper/modules/navigation/navigation.min.css';
 
 const data = [
   {
     name: "Catherine",
     description:
-      "I am a denver-based developer originally from the midwest. I wanted to get into coding professionally in order to challenge myself and potentially explore a new career.",
+      "Service Engineer that enjoys the challenge of programming. Open to exploring the potential of changing careers.",
     GitHub: "https://github.com/cdfoye",
-  },
-
-  {
-    name: "Kelly",
-    description:
-      "I am a Colorado Springs based developer. I am ready to start a new career and am excited to learn as well as to bring a fresh perspective.                                                    ",
-    GitHub: "https://github.com/kemwalsh",
-  },
-
-  {
-    name: "Aubree",
-    description:
-      "Hello there! I have been a nurse for 9 years and am ready to start a new career with some fun challenges.                                                        ",
-    GitHub: "https://github.com/AubreeZ-G",
   },
 
   {
     name: "Cynthia",
     description:
-      "From Interior Designer to Software Developer. I am educated in full-stack development from the University of Denver.                                                          ",
+      "From Interior Designer to Software Developer. Educated in full-stack development from the University of Denver.",
     GitHub: "https://github.com/CynthiaGodoy",
   },
+
+  {
+    name: "Aubree",
+    description:
+      "Hello there! I have been a nurse for 9 years and am ready to start a new career with some fun challenges.",
+    GitHub: "https://github.com/AubreeZ-G",
+  },
+
+  {
+    name: "Kelly",
+    description:
+      "Colorado Springs based developer ready to start a new career and bring a fresh perspective to programming.",
+    GitHub: "https://github.com/kemwalsh",
+  },
+
+
 ];
 export default function Display() {
   return (
+    <div className="dark-pink-out">
     <div className="Aubreewrapper">
       <header className="Aubreeheader" id="AubreePinkHeader">
         About Us
       </header>
+      <div className="columns" id="grid">
       <aside className="Aubreesidebar" id="AubreePurpleSidebar">
-        Hi there! Welcome to our app Toystalgia! We are an all women-based group
-        of full stack developers who just graduated from Denver University's
-        Coding Bootcamp. Together we wanted to make an app that brought joy with
-        equal doses whimsy and nostalgia. So, enjoy shopping for your favorite
-        vintage toys and have fun!{" "}
+        <p>We are an all women-based group of full stack developers & together we wanted to make an app that brought joy with
+        equal doses whimsy and nostalgia.</p>
+        
+        <p>So, enjoy shopping for your favorite
+        vintage toys and have fun!{" "} </p>
       </aside>
-      <article className="Aubreecontent">
+      <article className="Aubreecontent" id="AubreeGreenContent">
         <div className="AboutUsDisplay">
           {" "}
           <Swiper
-            style={{
-              width: "18rem",
-            }}
+            modules={[ Navigation, Pagination ]}
+            slidesPerView={3}
+            spaceBetween={10}
+            loop={true}
+            loopFillGroupWithBlank={true}
             navigation={true}
-            modules={[Navigation]}
+            pagination={{ clickable: true }}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+            //BREAKPOINTS GREATER THAN OR EQUAL TO-----------------------
+            breakpoints={{
+                          300: {slidesPerView: 1, spaceBetween: 10, centeredSlides: true,},
+                          768: {slidesPerView: 1, spaceBetween: 10, centeredSlides: true,},
+                          968: {slidesPerView: 2, spaceBetween: 5, centeredSlides: false,},
+                          1200: {slidesPerView: 3, spaceBetween: 10, centeredSlides: false,},
+                        }}
+
             className="mySwiper"
           >
             {data.map((person) => (
@@ -73,9 +90,11 @@ export default function Display() {
           </Swiper>
         </div>
       </article>
+      </div>
       <footer className="Aubreefooter" id="AubreeOrangeFooter">
         {" "}
       </footer>
+    </div>
     </div>
   );
 }

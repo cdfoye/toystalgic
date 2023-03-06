@@ -11,6 +11,7 @@ import { MdOutlineForum } from "react-icons/md";
 const Nav = () => {
   const [click, btnClick] = useState(false);
   const handleClick = () => btnClick(!click);
+  const closeMenu = () => btnClick(false)
 
   function showNavigation() {
     if (Auth.loggedIn()) {
@@ -56,27 +57,27 @@ const Nav = () => {
         <div className="loggedout">
           <ul className={click ? "navbar active" : "navbar"}>
             <li>
-              <Link to="/" className="hvr-li-float" smooth>
+              <Link to="/" className="hvr-li-float" onClick={closeMenu} smooth>
                 Shop
               </Link>
             </li>
             <li>
-              <Link to="/login" className="hvr-li-float" smooth>
+              <Link to="/login" className="hvr-li-float" onClick={closeMenu} smooth>
                 Login
               </Link>
             </li>
             <li>
-              <Link to="/signup" className="hvr-li-float" smooth>
+              <Link to="/signup" className="hvr-li-float" onClick={closeMenu} smooth>
                 Signup
               </Link>
             </li>
             <li>
-              <Link to="/AboutUs" className="hvr-li-float" smooth>
+              <Link to="/AboutUs" className="hvr-li-float" onClick={closeMenu} smooth>
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="/forum" className="hvr-li-float" smooth>
+              <Link to="/forum" className="hvr-li-float" onClick={closeMenu} smooth>
                 Forum{" "}
                 <MdOutlineForum
                   size={18}

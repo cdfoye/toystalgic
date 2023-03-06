@@ -1,16 +1,12 @@
-// import "./AboutUsStyle.css";
+import "./AboutUsStyle.css";
 import React from 'react';
-
 
 export default function AboutUsCard(props) {
   const cardStyle = {
     width: '18rem',
   };
 
-
   return (
-
-
     <div className="card" style={cardStyle}>
       <img
         className="card-img-top"
@@ -23,9 +19,7 @@ export default function AboutUsCard(props) {
         <a href={props.GitHub} className="AubreeLink" id="GitHubText">
           GitHub
         </a>
-
       </div>
     </div>
-
   );
 }
